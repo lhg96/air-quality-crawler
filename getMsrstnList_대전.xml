@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<response>
+	<header>
+		<resultCode>00</resultCode>
+		<resultMsg>NORMAL SERVICE.</resultMsg>
+	</header>
+	<body>
+		<items>
+			
+				<item>
+					<stationName>대성동</stationName>
+					<addr>대전 동구 동구청로 36대성동</addr>
+					<year>2018</year>
+					<oper>대전광역시보건환경연구원</oper>
+					<photo>http://www.airkorea.or.kr/airkorea/station_photo/NAMIS/station_images/525162/INSIDE_OTHER_1.jpg</photo>
+					<vrml></vrml>
+					<map></map>
+					<mangName>도시대기</mangName>
+					<item>SO2, CO, O3, NO2, PM10, PM2.5</item>
+					<dmX>36.301843</dmX>
+					<dmY>127.460205</dmY>
+				</item>
+			
+				<item>
+					<stationName>상대동(대전)</stationName>
+					<addr>대전 유성구 도안대로 398대전역사박물관</addr>
+					<year>2018</year>
+					<oper>대전광역시보건환경연구원</oper>
+					<photo>http://www.airkorea.or.kr/airkorea/station_photo/NAMIS/station_images/525143/INSIDE_OTHER_1.jpg</photo>
+					<vrml></vrml>
+					<map></map>
+					<mangName>도시대기</mangName>
+					<item>SO2, CO, O3, NO2, PM10, PM2.5</item>
+					<dmX>36.336411</dmX>
+					<dmY>127.334953</dmY>
+				</item>
+			
+				<item>
+					<stationName>읍내동</stationName>
+					<addr>대전 대덕구 대전로 1331번길 75(태아산업(주))태아산업(주)</addr>
+					<year>1988</year>
+					<oper>대전광역시보건환경연구원</oper>
+					<photo>http://www.airkorea.or.kr/airkorea/station_photo/NAMIS/station_images/525111/INSIDE_OTHER_1.bmp</photo>
+					<vrml>http://www.airkorea.or.kr/airkorea/vrml/525111.swf</vrml>
+					<map>http://www.airkorea.or.kr/airkorea/station_map/525111.gif</map>
+					<mangName>도시대기</mangName>
+					<item>SO2, CO, O3, NO2, PM10, PM2.5</item>
+					<dmX>36.372778</dmX>
+					<dmY>127.417222</dmY>
+				</item>
+			
+				<item>
+					<stationName>문평동</stationName>
+					<addr>대전 대덕구 문평동로 18번길 34(문평동 119안전센터)문평동 119안전센터</addr>
+					<year>2002</year>
+					<oper>대전광역시보건환경연구원</oper>
+					<photo>http://www.airkorea.or.kr/airkorea/station_photo/NAMIS/station_images/525112/INSIDE_OTHER_1.bmp</photo>
+					<vrml>http://www.airkorea.or.kr/airkorea/vrml/525112.swf</vrml>
+					<map>http://www.airkorea.or.kr/airkorea/station_map/525112.gif</map>
+					<mangName>도시대기</mangName>
+					<item>SO2, CO, O3, NO2, PM10, PM2.5</item>
+					<dmX>36.446944</dmX>
+					<dmY>127.404722</dmY>
+				</item>
+			
+				<item>
+					<stationName>문창동</stationName>
+					<addr>대전 중구 보문로 20번길 38(문창동 주민센터)문창동 주민센터</addr>
+					<year>1986</year>
+					<oper>대전광역시보건환경연구원</oper>
+					<photo>http://www.airkorea.or.kr/airkorea/station_photo/NAMIS/station_images/525121/INSIDE_OTHER_1.jpg</photo>
+					<vrml>http://www.airkorea.or.kr/airkorea/vrml/525121.swf</vrml>
+					<map>http://www.airkorea.or.kr/airkorea/station_map/525121.gif</map>
+					<mangName>도시대기</mangName>
+					<item>SO2, CO, O3, NO2, PM10, PM2.5</item>
+					<dmX>36.316111</dmX>
+					<dmY>127.437778</dmY>
+				</item>
+			
+				<item>
+					<stationName>구성동</stationName>
+					<addr>대전 유성구 대학로 407 보건환경연구원보건환경연구원</addr>
+					<year>2007</year>
+					<oper>대전광역시보건환경연구원</oper>
+					<photo>http://www.airkorea.or.kr/airkorea/station_photo/NAMIS/station_images/525141/INSIDE_OTHER_1.JPG</photo>
+					<vrml>http://www.airkorea.or.kr/airkorea/vrml/525141.swf</vrml>
+					<map>http://www.airkorea.or.kr/airkorea/station_map/525141.gif</map>
+					<mangName>도시대기</mangName>
+					<item>SO2, CO, O3, NO2, PM10, PM2.5</item>
+					<dmX>36.372411</dmX>
+					<dmY>127.373938</dmY>
+				</item>
+			
+				<item>
+					<stationName>노은동</stationName>
+					<addr>대전 유성구 노은동로 87번길 89(노은1동 주민센터)노은1동 주민센터 3층 옥상</addr>
+					<year>2011</year>
+					<oper>대전광역시보건환경연구원</oper>
+					<photo>http://www.airkorea.or.kr/airkorea/station_photo/NAMIS/station_images/525142/INSIDE_OTHER_1.bmp</photo>
+					<vrml></vrml>
+					<map>http://www.airkorea.or.kr/airkorea/station_map/525142.gif</map>
+					<mangName>도시대기</mangName>
+					<item>SO2, CO, O3, NO2, PM10, PM2.5</item>
+					<dmX>36.3682</dmX>
+					<dmY>127.3185</dmY>
+				</item>
+			
+				<item>
+					<stationName>대흥동1</stationName>
+					<addr>대전 중구 중앙로 58도로변</addr>
+					<year>1997</year>
+					<oper>대전광역시보건환경연구원</oper>
+					<photo>http://www.airkorea.or.kr/airkorea/station_photo/NAMIS/station_images/525151/INSIDE_OTHER_1.bmp</photo>
+					<vrml></vrml>
+					<map>http://www.airkorea.or.kr/airkorea/station_map/525151.gif</map>
+					<mangName>도로변대기</mangName>
+					<item>SO2, CO, O3, NO2, PM10, PM2.5</item>
+					<dmX>36.323889</dmX>
+					<dmY>127.418333</dmY>
+				</item>
+			
+				<item>
+					<stationName>성남동1</stationName>
+					<addr>대전 동구 계족로 368번길 70(성남동 주민센터)성남동 주민센터</addr>
+					<year>2003</year>
+					<oper>대전광역시보건환경연구원</oper>
+					<photo>http://www.airkorea.or.kr/airkorea/station_photo/NAMIS/station_images/525161/INSIDE_OTHER_1.bmp</photo>
+					<vrml>http://www.airkorea.or.kr/airkorea/vrml/525161.swf</vrml>
+					<map>http://www.airkorea.or.kr/airkorea/station_map/525161.gif</map>
+					<mangName>도시대기</mangName>
+					<item>SO2, CO, O3, NO2, PM10, PM2.5</item>
+					<dmX>36.344444</dmX>
+					<dmY>127.437222</dmY>
+				</item>
+			
+				<item>
+					<stationName>정림동</stationName>
+					<addr>대전 서구 정림동로 10(정림동 주민센터)정림동 주민센터</addr>
+					<year>2004</year>
+					<oper>대전광역시보건환경연구원</oper>
+					<photo>http://www.airkorea.or.kr/airkorea/station_photo/NAMIS/station_images/525171/INSIDE_OTHER_1.bmp</photo>
+					<vrml>http://www.airkorea.or.kr/airkorea/vrml/525171.swf</vrml>
+					<map>http://www.airkorea.or.kr/airkorea/station_map/525171.gif</map>
+					<mangName>도시대기</mangName>
+					<item>SO2, CO, O3, NO2, PM10, PM2.5</item>
+					<dmX>36.304667</dmX>
+					<dmY>127.366717</dmY>
+				</item>
+			
+				<item>
+					<stationName>둔산동</stationName>
+					<addr>대전 서구 둔산서로 84(근로자 종합복지회관)근로자 종합복지회관(3층 옥상)</addr>
+					<year>2006</year>
+					<oper>대전광역시보건환경연구원</oper>
+					<photo>http://www.airkorea.or.kr/airkorea/station_photo/NAMIS/station_images/525172/INSIDE_OTHER_1.bmp</photo>
+					<vrml>http://www.airkorea.or.kr/airkorea/vrml/525172.swf</vrml>
+					<map>http://www.airkorea.or.kr/airkorea/station_map/525172.gif</map>
+					<mangName>도시대기</mangName>
+					<item>SO2, CO, O3, NO2, PM10, PM2.5</item>
+					<dmX>36.354444</dmX>
+					<dmY>127.383056</dmY>
+				</item>
+			
+				<item>
+					<stationName>월평동</stationName>
+					<addr>대전 서구 월평동160-5도로변(월평자동차종합시장앞)</addr>
+					<year>2007</year>
+					<oper>대전광역시보건환경연구원</oper>
+					<photo>http://www.airkorea.or.kr/airkorea/station_photo/NAMIS/station_images/525173/INSIDE_OTHER_1.bmp</photo>
+					<vrml></vrml>
+					<map>http://www.airkorea.or.kr/airkorea/station_map/525173.gif</map>
+					<mangName>도로변대기</mangName>
+					<item>SO2, CO, O3, NO2, PM10, PM2.5</item>
+					<dmX>36.351111</dmX>
+					<dmY>127.354167</dmY>
+				</item>
+			
+		</items>
+			<numOfRows>100</numOfRows>
+			<pageNo>1</pageNo>
+			<totalCount>12</totalCount>
+	</body>
+</response>
