@@ -2,25 +2,15 @@ package app.gui;
 
 
 import java.awt.BorderLayout;
-import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -62,12 +52,15 @@ public class MainFrame extends JFrame  implements ActionListener {
 	JTextField textField2 = new JTextField(DEFAULT_URL_2+DEFAULT_COUNT+"&"+DEFAULT_KEY+"&"+DEFAULT_SIDO,col);
 	JTextField textField3 = new JTextField(DEFAULT_URL_3,col);
 	
-	JButton BTN_1 = new JButton("read");
-	JButton BTN_2 = new JButton("save");
-	JButton BTN_3 = new JButton("read");
-	JButton BTN_4 = new JButton("save");
-	JButton BTN_5 = new JButton("update");
-	JButton BTN_6 = new JButton("exit");
+	JButton BTN_0 = new JButton("Load");
+	JButton BTN_1 = new JButton("Crawling");
+	JButton BTN_2 = new JButton("Save");
+	
+	JButton BTN_3 = new JButton("Load");
+	JButton BTN_4 = new JButton("Crawling");
+	JButton BTN_5 = new JButton("Save");
+	JButton BTN_6 = new JButton("update");
+	JButton BTN_7 = new JButton("exit");
 
 	JTextArea textArea = new JTextArea(row, col);
 	int loggerMaxLine = 50;
@@ -87,14 +80,16 @@ public class MainFrame extends JFrame  implements ActionListener {
 		JPanel north = new JPanel(new BorderLayout());
 		JPanel northWest 	= new JPanel(new GridLayout(3,1));
 		JPanel northCenter 	= new JPanel(new GridLayout(3,1));
-		JPanel northEast 	= new JPanel(new GridLayout(3,2));		
+		JPanel northEast 	= new JPanel(new GridLayout(3,3));		
 		
+		BTN_0.addActionListener(this);
 		BTN_1.addActionListener(this);
 		BTN_2.addActionListener(this);
 		BTN_3.addActionListener(this);
 		BTN_4.addActionListener(this);
 		BTN_5.addActionListener(this);
 		BTN_6.addActionListener(this);
+		BTN_7.addActionListener(this);
 		
 		//labels
 		northWest.add(new JLabel("측정소목록"));
@@ -107,12 +102,14 @@ public class MainFrame extends JFrame  implements ActionListener {
 		northCenter.add(textField3);
 		
 		//buttons
+		northEast.add(BTN_0);
 		northEast.add(BTN_1);
 		northEast.add(BTN_2);
 		northEast.add(BTN_3);
 		northEast.add(BTN_4);
 		northEast.add(BTN_5);
 		northEast.add(BTN_6);
+		northEast.add(BTN_7);
 		
 		north.add(northEast, BorderLayout.EAST);
 		north.add(northCenter, BorderLayout.CENTER);
@@ -173,7 +170,9 @@ public class MainFrame extends JFrame  implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		String command = e.getActionCommand();
 		appendMessage("Button pressed:"+command, 0);
-		if (command.equals(BTN_1.getActionCommand())) {
+		
+		if (command.equals(BTN_0.getActionCommand())) {
+		}else if (command.equals(BTN_1.getActionCommand())) {
 			//측정소 정보 가져오기
 			String url = textField1.getText();		
 			appendMessage(url, 1);
@@ -192,6 +191,7 @@ public class MainFrame extends JFrame  implements ActionListener {
 		}else if (command.equals(BTN_4.getActionCommand())) {
 		}else if (command.equals(BTN_5.getActionCommand())) {
 		}else if (command.equals(BTN_6.getActionCommand())) {
+		}else if (command.equals(BTN_7.getActionCommand())) {
 			System.exit(0);//exit		
 		}
 

@@ -1,10 +1,7 @@
 package app.service;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.io.Writer;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
@@ -22,7 +19,6 @@ import org.slf4j.LoggerFactory;
 
 import com.opencsv.CSVWriter;
 
-import app.AppMain;
 import app.gui.MainFrame;
 import app.util.CustomUtil;
 import arim.vo.Station;
