@@ -41,6 +41,9 @@ public class MainFrame extends JFrame  implements ActionListener {
 			"addr=";//+대전	
 	String DEFAULT_SIDO =
 			"sidoName=";//+대전
+	String DEFAULT_VERSION =
+			"ver=1.0";  //pm2.5
+	
 	String DEFAULT_URL_1 = 
 			"http://openapi.airkorea.or.kr/openapi/services/rest/MsrstnInfoInqireSvc/getMsrstnList?";
 	String DEFAULT_URL_2 = 
@@ -48,8 +51,8 @@ public class MainFrame extends JFrame  implements ActionListener {
 	String DEFAULT_URL_3 = 
 			"http://arimapi.appspot.com/api/device";
 
-	JTextField textField1 = new JTextField(DEFAULT_URL_1+DEFAULT_COUNT+"&"+DEFAULT_KEY+"&"+DEFAULT_LOCAL,col);//DEFAULT_KEY  
-	JTextField textField2 = new JTextField(DEFAULT_URL_2+DEFAULT_COUNT+"&"+DEFAULT_KEY+"&"+DEFAULT_SIDO,col);
+	JTextField textField1 = new JTextField(DEFAULT_URL_1+DEFAULT_COUNT+"&"+DEFAULT_KEY+"&"+DEFAULT_VERSION+"&"+DEFAULT_LOCAL,col);//DEFAULT_KEY  
+	JTextField textField2 = new JTextField(DEFAULT_URL_2+DEFAULT_COUNT+"&"+DEFAULT_KEY+"&"+DEFAULT_VERSION+"&"+DEFAULT_SIDO,col);
 	JTextField textField3 = new JTextField(DEFAULT_URL_3,col);
 	
 	JButton BTN_0 = new JButton("Load");
@@ -168,30 +171,45 @@ public class MainFrame extends JFrame  implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		String command = e.getActionCommand();
-		appendMessage("Button pressed:"+command, 0);
+		//String command = e.getActionCommand();
+		JButton actionBTN = (JButton) e.getSource();		
+		appendMessage("Button pressed:"+actionBTN.getActionCommand(), 0);
 		
-		if (command.equals(BTN_0.getActionCommand())) {
-		}else if (command.equals(BTN_1.getActionCommand())) {
+		//load button
+		if (actionBTN==BTN_0) {
+			
+		}else if (actionBTN==BTN_1) {			
 			//측정소 정보 가져오기
 			String url = textField1.getText();		
-			appendMessage(url, 1);
+			//appendMessage(url, 1);
 			try {
 				MainFrame.service.getStationList(url);
 			}catch(Exception eo) {
 				appendMessage(eo.toString(), 0);
 			}
-		}else if (command.equals(BTN_2.getActionCommand())) {
+		}else if (actionBTN==BTN_2) {
+			//save button
 			try {
 				MainFrame.service.saveStationList();
 			}catch(Exception eo) {
 				appendMessage(eo.toString(), 0);
 			}
-		}else if (command.equals(BTN_3.getActionCommand())) {
-		}else if (command.equals(BTN_4.getActionCommand())) {
-		}else if (command.equals(BTN_5.getActionCommand())) {
-		}else if (command.equals(BTN_6.getActionCommand())) {
-		}else if (command.equals(BTN_7.getActionCommand())) {
+		}else if (actionBTN==BTN_3) {
+			//load
+		}else if (actionBTN==BTN_4) {
+			//crawling
+			//측정소 정보 가져오기
+			String url = textField2.getText();		
+			//appendMessage(url, 1);
+			try {
+				MainFrame.service.getRealTimeDatas(url);
+			}catch(Exception eo) {
+				appendMessage(eo.toString(), 0);
+			}			
+		}else if (actionBTN==BTN_5) {
+			//save
+		}else if (actionBTN==BTN_6) {
+		}else if (actionBTN==BTN_7) {
 			System.exit(0);//exit		
 		}
 

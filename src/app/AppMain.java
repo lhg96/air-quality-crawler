@@ -4,6 +4,11 @@ import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Toolkit;
 import java.awt.Window;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Reader;
+import java.util.Properties;
 
 import javax.swing.JFrame;
 import javax.swing.UIManager;
@@ -30,17 +35,27 @@ import app.gui.MainFrame;
  *
  */
 public class AppMain {
-	private static Logger logger = LoggerFactory.getLogger(AppMain.class);
+	private static Logger 	logger = LoggerFactory.getLogger(AppMain.class);
+	private static String 	title = "AirKorea  Crawler 대전";
 
-			 
 	public static void main(String[] args) {
 		AppMain main = new AppMain();
-		
+		//properties
+		try {
+			FileReader reader=new FileReader("application.properties");
+		    Properties p=new Properties();  
+		    p.load(reader);
+		    System.out.println(p.getProperty("user"));  
+		    System.out.println(p.getProperty("password"));  
+		} catch (IOException e) {	
+			logger.error(e.toString());
+		}
 		//main.logTest();
 		logger.info("start app");
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
+					
 					try {
 						UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 					} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
@@ -48,7 +63,7 @@ public class AppMain {
 						ex.printStackTrace();
 					}
 
-					MainFrame frame = new MainFrame("AirKorea crawler");
+					MainFrame frame = new MainFrame(title);
 					frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);					
 					frame.pack();
 					frame.setLocationRelativeTo(null);

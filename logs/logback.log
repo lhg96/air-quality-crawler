@@ -1,0 +1,25 @@
+2020-05-31 23:32:57.326 INFO  154  --- [ main ] app.AppMain - start app
+2020-05-31 23:32:59.264 INFO  2092 --- [ AWT-EventQueue-0 ] app.service.Service - GetStationInfo
+2020-06-06 22:05:55.108 INFO  214  --- [ main ] app.AppMain - start app
+2020-06-06 22:16:11.091 INFO  202  --- [ main ] app.AppMain - start app
+2020-06-06 22:19:44.770 INFO  205  --- [ main ] app.AppMain - start app
+2020-06-14 15:00:59.181 INFO  200  --- [ main ] app.AppMain - start app
+2020-06-14 15:01:15.099 INFO  16118 --- [ AWT-EventQueue-0 ] app.service.Service - GetStationInfo
+2020-07-05 12:24:51.999 INFO  198  --- [ main ] app.AppMain - start app
+2020-07-05 13:28:46.755 INFO  203  --- [ main ] app.AppMain - start app
+2020-07-05 13:28:55.039 INFO  8487 --- [ AWT-EventQueue-0 ] app.service.Service - GetStationInfo
+2020-07-05 19:01:34.869 INFO  206  --- [ main ] app.AppMain - start app
+2020-07-05 23:47:49.043 INFO  160  --- [ main ] app.AppMain - start app
+2020-07-05 23:48:25.990 INFO  206  --- [ main ] app.AppMain - start app
+2020-07-05 23:48:35.140 INFO  9356 --- [ AWT-EventQueue-0 ] app.service.Service - GetStationInfo
+2020-07-05 23:49:40.481 INFO  74697 --- [ AWT-EventQueue-0 ] app.service.Service - GetStationInfo
+2020-07-05 23:49:42.912 INFO  77128 --- [ AWT-EventQueue-0 ] app.service.Service - saveStationList:12
+2020-07-06 00:04:53.339 INFO  200  --- [ main ] app.AppMain - start app
+2020-07-06 00:04:59.855 INFO  6716 --- [ AWT-EventQueue-0 ] app.service.Service - GetStationInfo
+2020-07-06 00:05:56.860 INFO  63721 --- [ AWT-EventQueue-0 ] app.service.Service - saveStationList:12
+2020-07-06 00:09:43.639 INFO  190  --- [ main ] app.AppMain - start app
+2020-07-06 00:09:48.896 INFO  5447 --- [ AWT-EventQueue-0 ] app.service.Service - GetStationInfo
+2020-07-06 00:26:01.384 INFO  202  --- [ main ] app.AppMain - start app
+2020-07-06 00:26:07.729 INFO  6547 --- [ AWT-EventQueue-0 ] app.service.Service - GetStationInfo
+2020-07-06 00:41:26.737 INFO  201  --- [ main ] app.AppMain - start app
+2020-07-06 00:41:29.326 INFO  2790 --- [ AWT-EventQueue-0 ] app.service.Service - GetStationData

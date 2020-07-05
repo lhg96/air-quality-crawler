@@ -21,6 +21,7 @@ import com.opencsv.CSVWriter;
 
 import app.gui.MainFrame;
 import app.util.CustomUtil;
+import arim.vo.PAir;
 import arim.vo.Station;
 
 /**
@@ -42,7 +43,9 @@ public class Service {
 		{ "서울", "경기", "인천", "강원", "충남", "대전", "충북", 
 				"세종", "부산", "울산", "대구", "경북", "경남", "전남", "전북","제주" };	
 	List<String> 	locals = Arrays.asList(localArray);
-	List<Station> 	stationList = new ArrayList<Station>();;
+	List<Station> 	stationList = new ArrayList<Station>();
+	List<PAir>		pairList	 = new ArrayList<PAir>();
+	
 	
 	
 	public void getStationList(String url) {
@@ -56,11 +59,34 @@ public class Service {
 			} catch (InterruptedException e) {			
 				e.printStackTrace();
 			}			
-		}*/
-		
+		}*/		
 		String local = "대전";
 		stationList = getStationInfo(url, local);		
 		
+	}
+
+	public void getRealTimeDatas(String url) {
+		/*
+		for(int  i=0;i<locals.size();i++) {			
+			logger.info(locals.get(i)+" crawling");
+			getStationInfo(url, locals.get(i));
+			try {
+				Thread.sleep(5000);//동시 호출시 에러발생 자동 커텍트 방지
+				logger.info("delay 5000");
+			} catch (InterruptedException e) {			
+				e.printStackTrace();
+			}			
+		}*/		
+		String local = "대전";
+		pairList = getRealTimeData(url, local);
+	}
+
+	private List<PAir> getRealTimeData(String url, String local) {
+		logger.info("GetStationData");
+		url = url+local;	
+		MainFrame.mainUI.appendMessage("Connect", 1);
+		MainFrame.mainUI.appendMessage(url, 1);		
+		return null;
 	}
 
 	private List<Station> getStationInfo(String url, String local) {
