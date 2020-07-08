@@ -6,11 +6,14 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -18,14 +21,15 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.border.BevelBorder;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 import app.service.Service;
 
-public class MainFrame extends JFrame  implements ActionListener {
-
-	private static final long serialVersionUID = 1L;
-	public  static MainFrame mainUI;
-	public  static Service service;
+public class MainFrame extends JFrame  implements ActionListener, ItemListener{
+	private static final long 	serialVersionUID = 1L;
+	public  static MainFrame 	mainUI;
+	public  static Service 		service;
 
 
 	int row = 20;
@@ -55,24 +59,24 @@ public class MainFrame extends JFrame  implements ActionListener {
 	JTextField textField2 = new JTextField(DEFAULT_URL_2+DEFAULT_COUNT+"&"+DEFAULT_KEY+"&"+DEFAULT_VERSION+"&"+DEFAULT_SIDO,col);
 	JTextField textField3 = new JTextField(DEFAULT_URL_3,col);
 	
-	JButton BTN_0 = new JButton("Load");
-	JButton BTN_1 = new JButton("Crawling");
-	JButton BTN_2 = new JButton("Save");
+	JButton LOAD_STATION_BTN 	= new JButton("Load");
+	JButton CRAWLING_STATION_BTN = new JButton("Crawling");
+	JButton SAVE_STATION_BTN 	= new JButton("Save");
 	
-	JButton BTN_3 = new JButton("Load");
-	JButton BTN_4 = new JButton("Crawling");
-	JButton BTN_5 = new JButton("Save");
-	JButton BTN_6 = new JButton("update");
-	JButton BTN_7 = new JButton("exit");
+	JButton LOAD_DATA_BTN 		= new JButton("Load");
+	JButton CRAWLING_DATA_BTN 	= new JButton("Crawling");
+	JButton SAVE_DATA_BTN 		= new JButton("Save");
+	JButton UPDATE_DATA_BTN 	= new JButton("update");
+	JButton CLEAR_BTN 			= new JButton("Clear");
+	JCheckBox AUTO_CHECKBOX 	= new JCheckBox("Auto",false);
 
 	JTextArea textArea = new JTextArea(row, col);
 	int loggerMaxLine = 50;
-
 	
 	public MainFrame(String title) {
 		initComponents(title);
 		service = new Service();
-		mainUI = this;
+		mainUI 	= this;
 	}
 
 	private void initComponents(String title) {
@@ -85,19 +89,20 @@ public class MainFrame extends JFrame  implements ActionListener {
 		JPanel northCenter 	= new JPanel(new GridLayout(3,1));
 		JPanel northEast 	= new JPanel(new GridLayout(3,3));		
 		
-		BTN_0.addActionListener(this);
-		BTN_1.addActionListener(this);
-		BTN_2.addActionListener(this);
-		BTN_3.addActionListener(this);
-		BTN_4.addActionListener(this);
-		BTN_5.addActionListener(this);
-		BTN_6.addActionListener(this);
-		BTN_7.addActionListener(this);
+		LOAD_STATION_BTN.addActionListener(this);
+		CRAWLING_STATION_BTN.addActionListener(this);
+		SAVE_STATION_BTN.addActionListener(this);
+		LOAD_DATA_BTN.addActionListener(this);
+		CRAWLING_DATA_BTN.addActionListener(this);
+		SAVE_DATA_BTN.addActionListener(this);
+		UPDATE_DATA_BTN.addActionListener(this);
+		CLEAR_BTN.addActionListener(this);
+		AUTO_CHECKBOX.addItemListener(this);
 		
 		//labels
-		northWest.add(new JLabel("측정소목록"));
-		northWest.add(new JLabel("실시간정보"));
-		northWest.add(new JLabel("서버업데이트"));
+		northWest.add(new JLabel("측정소목록 API"));
+		northWest.add(new JLabel("실시간정보 API"));
+		northWest.add(new JLabel("서버업데이트 API"));
 		
 		//textfeild
 		northCenter.add(textField1);
@@ -105,14 +110,15 @@ public class MainFrame extends JFrame  implements ActionListener {
 		northCenter.add(textField3);
 		
 		//buttons
-		northEast.add(BTN_0);
-		northEast.add(BTN_1);
-		northEast.add(BTN_2);
-		northEast.add(BTN_3);
-		northEast.add(BTN_4);
-		northEast.add(BTN_5);
-		northEast.add(BTN_6);
-		northEast.add(BTN_7);
+		northEast.add(LOAD_STATION_BTN);
+		northEast.add(CRAWLING_STATION_BTN);
+		northEast.add(SAVE_STATION_BTN);
+		northEast.add(LOAD_DATA_BTN);
+		northEast.add(CRAWLING_DATA_BTN);
+		northEast.add(SAVE_DATA_BTN);
+		northEast.add(UPDATE_DATA_BTN);
+		northEast.add(CLEAR_BTN);
+		northEast.add(AUTO_CHECKBOX);
 		
 		north.add(northEast, BorderLayout.EAST);
 		north.add(northCenter, BorderLayout.CENTER);
@@ -164,11 +170,7 @@ public class MainFrame extends JFrame  implements ActionListener {
 		textArea.setSelectionStart(0);
 		textArea.setSelectionEnd(0);
 	}
-
-	StringBuffer stringbuffer = new StringBuffer();
-
-	int index = 0;
-
+	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		//String command = e.getActionCommand();
@@ -176,42 +178,56 @@ public class MainFrame extends JFrame  implements ActionListener {
 		appendMessage("Button pressed:"+actionBTN.getActionCommand(), 0);
 		
 		//load button
-		if (actionBTN==BTN_0) {
-			
-		}else if (actionBTN==BTN_1) {			
+		if (actionBTN==LOAD_STATION_BTN) {
+			try {
+				service.loadStations();
+			}catch(Exception eo) {
+				appendMessage(eo.toString(), 0);
+			}	
+		}else if (actionBTN==CRAWLING_STATION_BTN) {			
 			//측정소 정보 가져오기
 			String url = textField1.getText();		
 			//appendMessage(url, 1);
 			try {
-				MainFrame.service.getStationList(url);
+				service.crawlingStations(url);
 			}catch(Exception eo) {
 				appendMessage(eo.toString(), 0);
 			}
-		}else if (actionBTN==BTN_2) {
+		}else if (actionBTN==SAVE_STATION_BTN) {
 			//save button
 			try {
-				MainFrame.service.saveStationList();
+				service.saveStations();
 			}catch(Exception eo) {
 				appendMessage(eo.toString(), 0);
 			}
-		}else if (actionBTN==BTN_3) {
+		}else if (actionBTN==LOAD_DATA_BTN) {
 			//load
-		}else if (actionBTN==BTN_4) {
+		}else if (actionBTN==CRAWLING_DATA_BTN) {
 			//crawling
 			//측정소 정보 가져오기
 			String url = textField2.getText();		
 			//appendMessage(url, 1);
 			try {
-				MainFrame.service.getRealTimeDatas(url);
+				service.getRealTimeDatas(url);
 			}catch(Exception eo) {
 				appendMessage(eo.toString(), 0);
 			}			
-		}else if (actionBTN==BTN_5) {
+		}else if (actionBTN==SAVE_DATA_BTN) {
 			//save
-		}else if (actionBTN==BTN_6) {
-		}else if (actionBTN==BTN_7) {
-			System.exit(0);//exit		
+		}else if (actionBTN==UPDATE_DATA_BTN) {
+		}else if (actionBTN==CLEAR_BTN) {
+			textArea.setText("");	
 		}
 
+	}
+	/**
+	 * checkbox 
+	 */
+	@Override
+	public void itemStateChanged(ItemEvent e) {
+		JCheckBox checkBox = (JCheckBox) e.getSource();
+		boolean selected = e.getStateChange() == ItemEvent.SELECTED? true:false;	
+		System.out.println(checkBox.getActionCommand()+":"+selected);
+		
 	}
 }

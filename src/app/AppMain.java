@@ -31,7 +31,10 @@ import app.gui.MainFrame;
  * @author user
  * 
  * 20200531
- * log 수정
+ * log 저장 기능
+ * 
+ * 20200707
+ * property 읽기 기능
  *
  */
 public class AppMain {
@@ -45,8 +48,9 @@ public class AppMain {
 			FileReader reader=new FileReader("application.properties");
 		    Properties p=new Properties();  
 		    p.load(reader);
-		    System.out.println(p.getProperty("user"));  
-		    System.out.println(p.getProperty("password"));  
+		    p.list(System.out);
+		    //System.out.println(p.getProperty("user"));  
+		    //System.out.println(p.getProperty("password"));  
 		} catch (IOException e) {	
 			logger.error(e.toString());
 		}

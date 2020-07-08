@@ -8,6 +8,7 @@ import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.jsoup.Connection;
 import org.jsoup.HttpStatusException;
@@ -19,8 +20,10 @@ import org.slf4j.LoggerFactory;
 
 import com.opencsv.CSVWriter;
 
+
 import app.gui.MainFrame;
 import app.util.CustomUtil;
+import app.util.MsgBox;
 import arim.vo.PAir;
 import arim.vo.Station;
 
@@ -36,35 +39,65 @@ import arim.vo.Station;
  *
  */
 public class Service {
-	Logger logger = LoggerFactory.getLogger(Service.class);
-	String STATION_CSV_FILE_PATH = "./station.csv";
-	// 지역명	
-	String[] localArray = 
-		{ "서울", "경기", "인천", "강원", "충남", "대전", "충북", 
-				"세종", "부산", "울산", "대구", "경북", "경남", "전남", "전북","제주" };	
-	List<String> 	locals = Arrays.asList(localArray);
-	List<Station> 	stationList = new ArrayList<Station>();
-	List<PAir>		pairList	 = new ArrayList<PAir>();
+	Logger logger = LoggerFactory.getLogger(Service.class);	
+		
+	//service
+	CrawlingStationInfoService 	crawlingInfo;
+	SaveStationInfoService		saveStation;
+	LoadStationInfoService		loadStation;
 	
+	//DAO 로 나중에는 데이터 형 분리하기
+	public List<Station> 	stationList = new ArrayList<Station>();
+	public List<PAir>		pairList	= new ArrayList<PAir>();
+
 	
-	
-	public void getStationList(String url) {
-		/*
-		for(int  i=0;i<locals.size();i++) {			
-			logger.info(locals.get(i)+" crawling");
-			getStationInfo(url, locals.get(i));
-			try {
-				Thread.sleep(5000);//동시 호출시 에러발생 자동 커텍트 방지
-				logger.info("delay 5000");
-			} catch (InterruptedException e) {			
-				e.printStackTrace();
-			}			
-		}*/		
-		String local = "대전";
-		stationList = getStationInfo(url, local);		
+	//-------------------Station Info Service----------------------------------
+	public void loadStations() throws IOException {
+		if(loadStation==null) loadStation = new LoadStationInfoService();
+		stationList = loadStation.loadStation();
+		stationList.forEach(station->{
+			System.out.println(station);
+		});
+		
 		
 	}
-
+	/**
+	 * thread 처리가 필요해서 별도의 
+	 * @param url
+	 */
+	public void crawlingStations(String url) {
+		if(crawlingInfo==null) {
+			crawlingInfo = new CrawlingStationInfoService(url, this);
+			crawlingInfo.start();
+		}else {
+			if(!crawlingInfo.isRunning()) {
+				crawlingInfo = new CrawlingStationInfoService(url, this);
+				crawlingInfo.start();
+			}else {
+				//경고 popup				
+				MsgBox.info("Crawling Station Info", "Waring");
+			}
+		}
+		
+	}
+	
+	//public void addStations(List<Station> newStationInfo) {
+	//	stationList.addAll(newStationInfo);		
+	//}
+	
+	/**
+	 * save button working 
+	 * save csv file
+	 * @throws IOException 
+	 */
+	public void saveStations() throws IOException {
+		if(saveStation==null) {
+			saveStation = new SaveStationInfoService();			
+		}		
+		saveStation.saveStation(stationList);
+		
+	}
+	//-------------------Air Info Service----------------------------------	
 	public void getRealTimeDatas(String url) {
 		/*
 		for(int  i=0;i<locals.size();i++) {			
@@ -80,7 +113,6 @@ public class Service {
 		String local = "대전";
 		pairList = getRealTimeData(url, local);
 	}
-
 	private List<PAir> getRealTimeData(String url, String local) {
 		logger.info("GetStationData");
 		url = url+local;	
@@ -88,92 +120,8 @@ public class Service {
 		MainFrame.mainUI.appendMessage(url, 1);		
 		return null;
 	}
-
-	private List<Station> getStationInfo(String url, String local) {
-		logger.info("GetStationInfo");
-		url = url+local;	
-		MainFrame.mainUI.appendMessage("Connect", 1);
-		MainFrame.mainUI.appendMessage(url, 1);		
-		
-		List<Station> stationList = new ArrayList<Station>();
-		try {
-			Connection.Response response = Jsoup
-					.connect(url)
-					//.userAgent("Mozilla/5.0")
-					.userAgent("Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36")
-					.timeout(0).execute();
-			int statusCode = response.statusCode();
-			if (statusCode == 200) {
-				Document dok = Jsoup.parse(response.body(), url);
-				System.out.println("opened page: " + url);
-				
-				MainFrame.mainUI.appendMessage("Receive", 1);
-				MainFrame.mainUI.appendMessage(dok.toString(), 1);		
-				
-				Elements stationElements = dok.select("body items item");
-				
-				//item item 이 읽혀지지 않음
-				stationElements.forEach(stationElement->{
-					String stationName	= stationElement.select("stationName").text();
-					String addr			= stationElement.select("addr").text();
-					String yearStr 		= stationElement.select("year").text();					
-					int year			= CustomUtil.convertInt(yearStr);
-					String oper			= stationElement.select("oper").text();
-					String mangName		= stationElement.select("mangName").text();		
-					
-					String dmXStr 		= stationElement.select("dmX").text();					
-					double dmX			= CustomUtil.convertDouble(dmXStr);
-					String dmYStr		= stationElement.select("dmY").text();
-					double dmY			= CustomUtil.convertDouble(dmYStr);
-					Station newSt = new Station(stationName, addr, year, mangName,"", dmX, dmY);
-					if(!stationName.isEmpty()) {
-						MainFrame.mainUI.appendMessage(newSt.toString(), 1);
-						stationList.add(newSt);
-					}
-				});
-				
-				
-				
-			}
-		} catch (NullPointerException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (HttpStatusException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return stationList;
-		
-	}
-
-	public void saveStationList() throws IOException {
-		logger.info("saveStationList:"+stationList.size());
-		try(
-			Writer writer = Files.newBufferedWriter(Paths.get(STATION_CSV_FILE_PATH), StandardOpenOption.CREATE_NEW);
-			//FileOutputStream fos = new FileOutputStream(STATION_CSV_FILE_PATH,false);
-            //OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8);
-			CSVWriter csvWriter = new CSVWriter(writer,
-	                   CSVWriter.DEFAULT_SEPARATOR,
-	                   CSVWriter.NO_QUOTE_CHARACTER,
-	                   CSVWriter.DEFAULT_ESCAPE_CHARACTER,
-	                   CSVWriter.DEFAULT_LINE_END)
-		){
-			String[] headerRecord = {"stationName", "addr", "year", "mangName", "dmX", "dmY"};
-			csvWriter.writeNext(headerRecord);
-			
-			stationList.forEach(st->{
-				String stationName = st.getStationName();
-				String addr = st.getAddr();
-				String year = st.getYear()+"";
-				String mangName = st.getMangName();
-				String dmX = st.getDmX()+"";
-				String dmY = st.getDmY()+"";
-				csvWriter.writeNext(new String[]{stationName, addr, year, mangName, dmX, dmY});
-				MainFrame.mainUI.appendMessage(st.toString(), 1);
-			});
-		}
-		
-	}
 }
+
+
+
+
