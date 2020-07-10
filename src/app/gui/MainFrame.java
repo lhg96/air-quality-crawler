@@ -194,7 +194,7 @@ public class MainFrame extends JFrame  implements ActionListener, ItemListener{
 				appendMessage(eo.toString(), 0);
 			}
 		}else if (actionBTN==SAVE_STATION_BTN) {
-			//save button
+			//save button			
 			try {
 				service.saveStations();
 			}catch(Exception eo) {
@@ -208,7 +208,7 @@ public class MainFrame extends JFrame  implements ActionListener, ItemListener{
 			String url = textField2.getText();		
 			//appendMessage(url, 1);
 			try {
-				service.getRealTimeDatas(url);
+				service.crawlingDatas(url);
 			}catch(Exception eo) {
 				appendMessage(eo.toString(), 0);
 			}			

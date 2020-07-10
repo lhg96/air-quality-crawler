@@ -115,3 +115,149 @@
 2020-07-08 15:28:23.624 INFO  260  --- [ main ] app.AppMain - start app
 2020-07-08 15:36:36.375 INFO  246  --- [ main ] app.AppMain - start app
 2020-07-08 15:44:21.931 INFO  246  --- [ main ] app.AppMain - start app
+2020-07-10 13:34:41.633 INFO  289  --- [ main ] app.AppMain - start app
+2020-07-10 14:54:12.429 INFO  246  --- [ main ] app.AppMain - start app
+2020-07-10 14:55:04.216 INFO  52033 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 서울 crawling
+2020-07-10 14:55:04.216 INFO  52033 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:55:09.870 INFO  57687 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 경기 crawling
+2020-07-10 14:55:09.870 INFO  57687 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:55:15.149 INFO  62966 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 인천 crawling
+2020-07-10 14:55:15.149 INFO  62966 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:55:20.314 INFO  68131 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 강원 crawling
+2020-07-10 14:55:20.314 INFO  68131 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:55:25.406 INFO  73223 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 충남 crawling
+2020-07-10 14:55:25.406 INFO  73223 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:55:30.512 INFO  78329 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-10 14:55:30.512 INFO  78329 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:55:35.581 INFO  83398 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 충북 crawling
+2020-07-10 14:55:35.581 INFO  83398 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:55:40.672 INFO  88489 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 세종 crawling
+2020-07-10 14:55:40.672 INFO  88489 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:55:45.718 INFO  93535 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 부산 crawling
+2020-07-10 14:55:45.718 INFO  93535 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:55:51.642 INFO  99459 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 울산 crawling
+2020-07-10 14:55:51.642 INFO  99459 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:55:56.709 INFO  104526 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 대구 crawling
+2020-07-10 14:55:56.709 INFO  104526 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:56:01.827 INFO  109644 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 경북 crawling
+2020-07-10 14:56:01.827 INFO  109644 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:56:06.953 INFO  114770 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 경남 crawling
+2020-07-10 14:56:06.953 INFO  114770 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:56:12.634 INFO  120451 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 전남 crawling
+2020-07-10 14:56:12.634 INFO  120451 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:56:17.745 INFO  125562 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 전북 crawling
+2020-07-10 14:56:17.745 INFO  125562 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:56:23.324 INFO  131141 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 제주 crawling
+2020-07-10 14:56:23.324 INFO  131141 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 14:57:43.974 INFO  211791 --- [ AWT-EventQueue-0 ] app.service.SaveStationInfoService - saveStationList:480
+2020-07-10 15:20:49.478 INFO  244  --- [ main ] app.AppMain - start app
+2020-07-10 15:20:58.406 INFO  9172 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 서울 crawling
+2020-07-10 15:20:58.406 INFO  9172 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:21:03.790 INFO  14556 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 경기 crawling
+2020-07-10 15:21:03.790 INFO  14556 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:21:09.080 INFO  19846 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 인천 crawling
+2020-07-10 15:21:09.080 INFO  19846 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:21:14.167 INFO  24933 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 강원 crawling
+2020-07-10 15:21:14.167 INFO  24933 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:21:19.269 INFO  30035 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 충남 crawling
+2020-07-10 15:21:19.269 INFO  30035 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:21:24.393 INFO  35159 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-10 15:21:24.393 INFO  35159 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:21:29.450 INFO  40216 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 충북 crawling
+2020-07-10 15:21:29.450 INFO  40216 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:21:34.521 INFO  45287 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 세종 crawling
+2020-07-10 15:21:34.521 INFO  45287 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:21:39.559 INFO  50325 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 부산 crawling
+2020-07-10 15:21:39.559 INFO  50325 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:21:44.655 INFO  55421 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 울산 crawling
+2020-07-10 15:21:44.655 INFO  55421 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:21:49.725 INFO  60491 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 대구 crawling
+2020-07-10 15:21:49.725 INFO  60491 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:21:54.800 INFO  65566 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 경북 crawling
+2020-07-10 15:21:54.800 INFO  65566 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:21:59.926 INFO  70692 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 경남 crawling
+2020-07-10 15:21:59.926 INFO  70692 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:22:05.122 INFO  75888 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 전남 crawling
+2020-07-10 15:22:05.122 INFO  75888 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:22:10.240 INFO  81006 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 전북 crawling
+2020-07-10 15:22:10.240 INFO  81006 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:22:15.335 INFO  86101 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 제주 crawling
+2020-07-10 15:22:15.335 INFO  86101 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:23:13.370 INFO  144136 --- [ AWT-EventQueue-0 ] app.service.SaveStationInfoService - saveStationList:480
+2020-07-10 15:24:27.568 INFO  218334 --- [ AWT-EventQueue-0 ] app.service.SaveStationInfoService - saveStationList:480
+2020-07-10 15:37:20.988 INFO  224  --- [ main ] app.AppMain - start app
+2020-07-10 15:37:28.643 INFO  7879 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 서울 crawling
+2020-07-10 15:37:28.643 INFO  7879 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:37:34.000 INFO  13236 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 경기 crawling
+2020-07-10 15:37:34.000 INFO  13236 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:37:39.250 INFO  18486 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 인천 crawling
+2020-07-10 15:37:39.250 INFO  18486 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:37:44.336 INFO  23572 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 강원 crawling
+2020-07-10 15:37:44.336 INFO  23572 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:37:49.452 INFO  28688 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 충남 crawling
+2020-07-10 15:37:49.452 INFO  28688 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:37:54.571 INFO  33807 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-10 15:37:54.571 INFO  33807 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:37:59.633 INFO  38869 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 충북 crawling
+2020-07-10 15:37:59.633 INFO  38869 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:38:04.706 INFO  43942 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 세종 crawling
+2020-07-10 15:38:04.706 INFO  43942 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:38:09.761 INFO  48997 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 부산 crawling
+2020-07-10 15:38:09.761 INFO  48997 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:38:14.936 INFO  54172 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 울산 crawling
+2020-07-10 15:38:14.936 INFO  54172 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:38:20.006 INFO  59242 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 대구 crawling
+2020-07-10 15:38:20.006 INFO  59242 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:38:25.075 INFO  64311 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 경북 crawling
+2020-07-10 15:38:25.075 INFO  64311 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:38:30.215 INFO  69451 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 경남 crawling
+2020-07-10 15:38:30.215 INFO  69451 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:38:35.352 INFO  74588 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 전남 crawling
+2020-07-10 15:38:35.352 INFO  74588 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:38:40.446 INFO  79682 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 전북 crawling
+2020-07-10 15:38:40.446 INFO  79682 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:38:45.546 INFO  84782 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 제주 crawling
+2020-07-10 15:38:45.546 INFO  84782 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 15:41:28.597 INFO  247833 --- [ AWT-EventQueue-0 ] app.service.SaveStationInfoService - saveStationList:480
+2020-07-10 16:00:50.660 INFO  252  --- [ main ] app.AppMain - start app
+2020-07-10 16:01:16.644 INFO  26236 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 서울 crawling
+2020-07-10 16:01:16.644 INFO  26236 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:01:22.011 INFO  31603 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 경기 crawling
+2020-07-10 16:01:22.011 INFO  31603 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:01:27.291 INFO  36883 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 인천 crawling
+2020-07-10 16:01:27.291 INFO  36883 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:01:32.410 INFO  42002 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 강원 crawling
+2020-07-10 16:01:32.410 INFO  42002 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:01:37.495 INFO  47087 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 충남 crawling
+2020-07-10 16:01:37.495 INFO  47087 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:01:42.607 INFO  52199 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-10 16:01:42.607 INFO  52199 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:01:47.660 INFO  57252 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 충북 crawling
+2020-07-10 16:01:47.660 INFO  57252 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:01:52.755 INFO  62347 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 세종 crawling
+2020-07-10 16:01:52.755 INFO  62347 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:01:57.821 INFO  67413 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 부산 crawling
+2020-07-10 16:01:57.821 INFO  67413 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:02:02.928 INFO  72520 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 울산 crawling
+2020-07-10 16:02:02.928 INFO  72520 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:02:08.006 INFO  77598 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 대구 crawling
+2020-07-10 16:02:08.006 INFO  77598 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:02:13.079 INFO  82671 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 경북 crawling
+2020-07-10 16:02:13.079 INFO  82671 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:02:18.227 INFO  87819 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 경남 crawling
+2020-07-10 16:02:18.227 INFO  87819 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:02:23.368 INFO  92960 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 전남 crawling
+2020-07-10 16:02:23.368 INFO  92960 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:02:28.464 INFO  98056 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 전북 crawling
+2020-07-10 16:02:28.464 INFO  98056 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:02:33.555 INFO  103147 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 제주 crawling
+2020-07-10 16:02:33.555 INFO  103147 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:02:59.392 INFO  128984 --- [ AWT-EventQueue-0 ] app.service.SaveStationInfoService - saveStationList:480
+2020-07-10 16:11:01.820 INFO  253  --- [ main ] app.AppMain - start app
+2020-07-10 16:11:08.074 INFO  6507 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 서울 crawling
+2020-07-10 16:11:08.074 INFO  6507 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:11:34.969 INFO  33402 --- [ AWT-EventQueue-0 ] app.service.SaveStationInfoService - saveStationList:0
+2020-07-10 16:12:04.255 INFO  246  --- [ main ] app.AppMain - start app
+2020-07-10 16:12:09.012 INFO  5003 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 서울 crawling
+2020-07-10 16:12:09.012 INFO  5003 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-10 16:50:02.687 INFO  249  --- [ main ] app.AppMain - start app

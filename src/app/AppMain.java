@@ -6,8 +6,7 @@ import java.awt.Toolkit;
 import java.awt.Window;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
+
 import java.util.Properties;
 
 import javax.swing.JFrame;
@@ -22,7 +21,6 @@ import app.gui.MainFrame;
 /**
  * Log 저장 방법
  * https://m.blog.naver.com/PostView.nhn?blogId=occidere&logNo=221341280123&proxyReferer=https%3A%2F%2Fwww.google.com%2F
- * 
  * 
  * serial
  * https://eclipsesource.com/blogs/2012/10/17/serial-communication-in-java-with-raspberry-pi-and-rxtx/
@@ -78,7 +76,7 @@ public class AppMain {
 			}
 		});
 	}
-
+	
 	private void logTest() {
 		logger.info("test1");
 		logger.trace("Hello world.");

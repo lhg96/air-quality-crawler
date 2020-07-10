@@ -52,20 +52,16 @@ public class Service {
 
 	
 	//-------------------Station Info Service----------------------------------
-	public void loadStations() throws IOException {
+	public void loadStations() throws IOException {		
 		if(loadStation==null) loadStation = new LoadStationInfoService();
 		stationList = loadStation.loadStation();
-		stationList.forEach(station->{
-			System.out.println(station);
-		});
-		
-		
+		MainFrame.mainUI.appendMessage("Load Stations:"+stationList.size(), 1);		
 	}
 	/**
 	 * thread 처리가 필요해서 별도의 
 	 * @param url
 	 */
-	public void crawlingStations(String url) {
+	public void crawlingStations(String url){
 		if(crawlingInfo==null) {
 			crawlingInfo = new CrawlingStationInfoService(url, this);
 			crawlingInfo.start();
@@ -79,26 +75,22 @@ public class Service {
 			}
 		}
 		
-	}
-	
-	//public void addStations(List<Station> newStationInfo) {
-	//	stationList.addAll(newStationInfo);		
-	//}
-	
+	}		
 	/**
 	 * save button working 
 	 * save csv file
 	 * @throws IOException 
 	 */
-	public void saveStations() throws IOException {
+	public void saveStations() throws IOException {				
 		if(saveStation==null) {
 			saveStation = new SaveStationInfoService();			
 		}		
 		saveStation.saveStation(stationList);
+		MainFrame.mainUI.appendMessage("Save Stations:"+stationList.size(), 1);
 		
 	}
 	//-------------------Air Info Service----------------------------------	
-	public void getRealTimeDatas(String url) {
+	public void crawlingDatas(String url) {
 		/*
 		for(int  i=0;i<locals.size();i++) {			
 			logger.info(locals.get(i)+" crawling");

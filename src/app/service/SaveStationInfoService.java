@@ -1,10 +1,10 @@
 package app.service;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.io.Writer;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -27,10 +27,14 @@ public class SaveStationInfoService {
 	
 	public void saveStation(List<Station> 	stationList) throws IOException {
 		logger.info("saveStationList:"+stationList.size());
+		//System.out.println("----------------------------------------------------------------");
 		try(
-			Writer writer = Files.newBufferedWriter(Paths.get(STATION_CSV_FILE_PATH), StandardOpenOption.CREATE_NEW);
-			//FileOutputStream fos = new FileOutputStream(STATION_CSV_FILE_PATH,false);
-            //OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8);
+			//Writer writer = Files.newBufferedWriter(Paths.get(STATION_CSV_FILE_PATH), StandardOpenOption.CREATE_NEW);
+			FileOutputStream fos 	=  new FileOutputStream(STATION_CSV_FILE_PATH);
+			Writer 			 writer =  new OutputStreamWriter(fos, StandardCharsets.UTF_8);			
+			//utf8 encoding				
+			//FileOutputStream 		fos = new FileOutputStream(STATION_CSV_FILE_PATH,false);
+            //OutputStreamWriter 	osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8);
 			CSVWriter csvWriter = new CSVWriter(writer,
 	                   CSVWriter.DEFAULT_SEPARATOR,
 	                   CSVWriter.NO_QUOTE_CHARACTER,
@@ -49,7 +53,7 @@ public class SaveStationInfoService {
 						String dmY = st.getDmY()+"";
 						csvWriter.writeNext(new String[]{stationName, addr, year, mangName, dmX, dmY});
 						MainFrame.mainUI.appendMessage(st.toString(), 1);
-					});
+			});			
 		}		
 	}
 }
