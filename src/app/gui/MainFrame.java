@@ -66,7 +66,7 @@ public class MainFrame extends JFrame  implements ActionListener, ItemListener{
 	JButton LOAD_DATA_BTN 		= new JButton("Load");
 	JButton CRAWLING_DATA_BTN 	= new JButton("Crawling");
 	JButton SAVE_DATA_BTN 		= new JButton("Save");
-	JButton UPDATE_DATA_BTN 	= new JButton("update");
+	JButton UPLOAD_DATA_BTN 	= new JButton("Upload");
 	JButton CLEAR_BTN 			= new JButton("Clear");
 	JCheckBox AUTO_CHECKBOX 	= new JCheckBox("Auto",false);
 
@@ -95,7 +95,7 @@ public class MainFrame extends JFrame  implements ActionListener, ItemListener{
 		LOAD_DATA_BTN.addActionListener(this);
 		CRAWLING_DATA_BTN.addActionListener(this);
 		SAVE_DATA_BTN.addActionListener(this);
-		UPDATE_DATA_BTN.addActionListener(this);
+		UPLOAD_DATA_BTN.addActionListener(this);
 		CLEAR_BTN.addActionListener(this);
 		AUTO_CHECKBOX.addItemListener(this);
 		
@@ -116,7 +116,7 @@ public class MainFrame extends JFrame  implements ActionListener, ItemListener{
 		northEast.add(LOAD_DATA_BTN);
 		northEast.add(CRAWLING_DATA_BTN);
 		northEast.add(SAVE_DATA_BTN);
-		northEast.add(UPDATE_DATA_BTN);
+		northEast.add(UPLOAD_DATA_BTN);
 		northEast.add(CLEAR_BTN);
 		northEast.add(AUTO_CHECKBOX);
 		
@@ -172,53 +172,40 @@ public class MainFrame extends JFrame  implements ActionListener, ItemListener{
 	}
 	
 	@Override
-	public void actionPerformed(ActionEvent e) {
-		//String command = e.getActionCommand();
+	public void actionPerformed(ActionEvent e) {		
 		JButton actionBTN = (JButton) e.getSource();		
 		appendMessage("Button pressed:"+actionBTN.getActionCommand(), 0);
 		
-		//load button
-		if (actionBTN==LOAD_STATION_BTN) {
-			try {
+		try {
+			if (actionBTN==LOAD_STATION_BTN) {			
 				service.loadStations();
-			}catch(Exception eo) {
-				appendMessage(eo.toString(), 0);
-			}	
-		}else if (actionBTN==CRAWLING_STATION_BTN) {			
-			//측정소 정보 가져오기
-			String url = textField1.getText();		
-			//appendMessage(url, 1);
-			try {
-				service.crawlingStations(url);
-			}catch(Exception eo) {
-				appendMessage(eo.toString(), 0);
+					
+			}else if (actionBTN==CRAWLING_STATION_BTN) {			
+				//측정소 정보 가져오기
+				String url = textField1.getText();
+				service.crawlingStations(url);				
+			}else if (actionBTN==SAVE_STATION_BTN) {
+				//save button
+				service.saveStations();				
+			}else if (actionBTN==LOAD_DATA_BTN) {
+				//load
+				service.loadData();
+			}else if (actionBTN==CRAWLING_DATA_BTN){
+				//crawling
+				//측정소 정보 가져오기
+				String url = textField2.getText();				
+				service.crawlingDatas(url);				
+			}else if (actionBTN==SAVE_DATA_BTN){
+				//save
+				service.saveData();
+			}else if (actionBTN==UPLOAD_DATA_BTN){
+				service.uploadData();
+			}else if (actionBTN==CLEAR_BTN){
+				textArea.setText("");				
 			}
-		}else if (actionBTN==SAVE_STATION_BTN) {
-			//save button			
-			try {
-				service.saveStations();
-			}catch(Exception eo) {
-				appendMessage(eo.toString(), 0);
-			}
-		}else if (actionBTN==LOAD_DATA_BTN) {
-			//load
-		}else if (actionBTN==CRAWLING_DATA_BTN) {
-			//crawling
-			//측정소 정보 가져오기
-			String url = textField2.getText();		
-			//appendMessage(url, 1);
-			try {
-				service.crawlingDatas(url);
-			}catch(Exception eo) {
-				appendMessage(eo.toString(), 0);
-			}			
-		}else if (actionBTN==SAVE_DATA_BTN) {
-			//save
-		}else if (actionBTN==UPDATE_DATA_BTN) {
-		}else if (actionBTN==CLEAR_BTN) {
-			textArea.setText("");	
+		}catch(Exception eo) {
+			appendMessage(eo.toString(), 0);
 		}
-
 	}
 	/**
 	 * checkbox 

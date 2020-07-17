@@ -261,3 +261,12 @@
 2020-07-10 16:12:09.012 INFO  5003 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 서울 crawling
 2020-07-10 16:12:09.012 INFO  5003 --- [ Thread-2 ] a.s.CrawlingStationInfoService - GetStationInfo
 2020-07-10 16:50:02.687 INFO  249  --- [ main ] app.AppMain - start app
+2020-07-14 14:40:35.010 INFO  696  --- [ main ] app.AppMain - start app
+2020-07-14 16:07:28.916 INFO  5214602 --- [ AWT-EventQueue-0 ] app.service.Service - GetStationData
+2020-07-14 16:07:48.484 INFO  5234170 --- [ AWT-EventQueue-0 ] app.service.Service - GetStationData
+2020-07-14 17:18:21.761 INFO  289  --- [ main ] app.AppMain - start app
+2020-07-14 17:21:29.698 INFO  188226 --- [ AWT-EventQueue-0 ] app.service.Service - GetRealTimeData
+2020-07-17 10:49:08.690 INFO  541  --- [ main ] app.AppMain - start app
+2020-07-17 15:12:08.828 INFO  15780679 --- [ AWT-EventQueue-0 ] app.service.Service - GetRealTimeData
+2020-07-17 15:55:17.497 INFO  257  --- [ main ] app.AppMain - start app
+2020-07-17 16:15:47.607 INFO  1230367 --- [ AWT-EventQueue-0 ] app.service.SaveDataService - saveAirList:0
