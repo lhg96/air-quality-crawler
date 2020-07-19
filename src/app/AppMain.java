@@ -40,18 +40,7 @@ public class AppMain {
 	private static String 	title = "AirKorea  Crawler 대전";
 
 	public static void main(String[] args) {
-		AppMain main = new AppMain();
-		//properties
-		try {
-			FileReader reader=new FileReader("application.properties");
-		    Properties p=new Properties();  
-		    p.load(reader);
-		    p.list(System.out);
-		    //System.out.println(p.getProperty("user"));  
-		    //System.out.println(p.getProperty("password"));  
-		} catch (IOException e) {	
-			logger.error(e.toString());
-		}
+		AppMain main = new AppMain();		
 		//main.logTest();
 		logger.info("start app");
 		EventQueue.invokeLater(new Runnable() {

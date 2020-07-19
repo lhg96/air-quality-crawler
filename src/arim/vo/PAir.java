@@ -8,6 +8,7 @@ import java.util.Date;
  *
  */
 public class PAir {
+	String local;
 	String stationName;
 	Date   dateTime;
 	double so2Value;
@@ -17,9 +18,16 @@ public class PAir {
 	double pm10Value;
 	double pm25Value;
 			
-	public PAir(String stationName, Date dateTime, double so2Value, double coValue, double o3Value, double no2Value,
+	public PAir(String local,
+			String stationName, 
+			Date dateTime, 
+			double so2Value, 
+			double coValue, 
+			double o3Value, 
+			double no2Value,
 			double pm10Value, double pm25Value) {
 		super();
+		this.local		= local;
 		this.stationName = stationName;
 		this.dateTime = dateTime;
 		this.so2Value = so2Value;
@@ -30,6 +38,17 @@ public class PAir {
 		this.pm25Value = pm25Value;
 	}
 	
+	
+	public String getLocal() {
+		return local;
+	}
+
+
+	public void setLocal(String local) {
+		this.local = local;
+	}
+
+
 	public String getStationName() {
 		return stationName;
 	}
@@ -79,13 +98,14 @@ public class PAir {
 		this.pm25Value = pm25Value;
 	}
 
+
 	@Override
 	public String toString() {
-		return "PAir [stationName=" + stationName + ", dateTime=" + dateTime + ", so2Value=" + so2Value + ", coValue="
-				+ coValue + ", o3Value=" + o3Value + ", no2Value=" + no2Value + ", pm10Value=" + pm10Value
-				+ ", pm25Value=" + pm25Value + "]";
+		return "PAir [local=" + local + ", stationName=" + stationName + ", dateTime=" + dateTime + ", so2Value="
+				+ so2Value + ", coValue=" + coValue + ", o3Value=" + o3Value + ", no2Value=" + no2Value + ", pm10Value="
+				+ pm10Value + ", pm25Value=" + pm25Value + "]";
 	}
-	
+
 	
 	
 	

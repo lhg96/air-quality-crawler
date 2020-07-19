@@ -1,0 +1,3 @@
+http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?stationName=종로구&dataTerm=month&pageNo=1&numOfRows=10&ServiceKey=Ir8wq7VY661b0Ka0RfCj%2F7xNbzv8f%2FSOqIwKcqM3kdsdhEmBRa1TZfGgamQZsoLt4ZSGeACbVtCwn9v90lqEhQ%3D%3D&ver=1.3
+&ver=1.3
+http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty?numOfRows=100&ServiceKey=Ir8wq7VY661b0Ka0RfCj%2F7xNbzv8f%2FSOqIwKcqM3kdsdhEmBRa1TZfGgamQZsoLt4ZSGeACbVtCwn9v90lqEhQ%3D%3D&sidoName=대성동&ver=1.3

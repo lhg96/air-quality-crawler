@@ -53,7 +53,7 @@ public class CrawlingStationInfoService implements Runnable{
         	
 	public void run() {
 		running.set(true);
-		service.stationList = new ArrayList<Station>();
+		service.stationList = new ArrayList<Station>();		
 		
 		for(int  i=0;i<locals.size();i++) {			
 			logger.info(locals.get(i)+" crawling");			

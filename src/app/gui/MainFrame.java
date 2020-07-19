@@ -8,8 +8,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.io.FileReader;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -24,9 +27,15 @@ import javax.swing.border.BevelBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import app.AppMain;
 import app.service.Service;
+import app.util.CustomUtil;
 
 public class MainFrame extends JFrame  implements ActionListener, ItemListener{
+	private static Logger 	logger = LoggerFactory.getLogger(MainFrame.class);
 	private static final long 	serialVersionUID = 1L;
 	public  static MainFrame 	mainUI;
 	public  static Service 		service;
@@ -55,9 +64,9 @@ public class MainFrame extends JFrame  implements ActionListener, ItemListener{
 	String DEFAULT_URL_3 = 
 			"http://arimapi.appspot.com/api/device";
 
-	JTextField textField1 = new JTextField(DEFAULT_URL_1+DEFAULT_COUNT+"&"+DEFAULT_KEY+"&"+DEFAULT_VERSION+"&"+DEFAULT_LOCAL,col);//DEFAULT_KEY  
-	JTextField textField2 = new JTextField(DEFAULT_URL_2+DEFAULT_COUNT+"&"+DEFAULT_KEY+"&"+DEFAULT_VERSION+"&"+DEFAULT_SIDO,col);
-	JTextField textField3 = new JTextField(DEFAULT_URL_3,col);
+	public JTextField textField1 = new JTextField(DEFAULT_URL_1+DEFAULT_COUNT+"&"+DEFAULT_KEY+"&"+DEFAULT_VERSION+"&"+DEFAULT_LOCAL,col);//DEFAULT_KEY  
+	public JTextField textField2 = new JTextField(DEFAULT_URL_2+DEFAULT_COUNT+"&"+DEFAULT_KEY+"&"+DEFAULT_VERSION+"&"+DEFAULT_SIDO,col);
+	public JTextField textField3 = new JTextField(DEFAULT_URL_3,col);
 	
 	JButton LOAD_STATION_BTN 	= new JButton("Load");
 	JButton CRAWLING_STATION_BTN = new JButton("Crawling");
@@ -73,12 +82,28 @@ public class MainFrame extends JFrame  implements ActionListener, ItemListener{
 	JTextArea textArea = new JTextArea(row, col);
 	int loggerMaxLine = 50;
 	
+	Properties p = new Properties();
+	
 	public MainFrame(String title) {
+		loadProperty();
 		initComponents(title);
 		service = new Service();
-		mainUI 	= this;
+		mainUI 	= this;		
 	}
 
+	private void loadProperty() {
+		//properties
+		try {
+			FileReader reader=new FileReader("application.properties");			      
+			p.load(reader);
+			p.list(System.out);
+			//System.out.println(p.getProperty("user"));
+			//System.out.println(p.getProperty("password"));  
+		} catch (IOException e) {	
+			logger.error(e.toString());
+		}
+	}
+	
 	private void initComponents(String title) {
 		setTitle(title);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -214,7 +239,12 @@ public class MainFrame extends JFrame  implements ActionListener, ItemListener{
 	public void itemStateChanged(ItemEvent e) {
 		JCheckBox checkBox = (JCheckBox) e.getSource();
 		boolean selected = e.getStateChange() == ItemEvent.SELECTED? true:false;	
-		System.out.println(checkBox.getActionCommand()+":"+selected);
+		//System.out.println(checkBox.getActionCommand()+":"+selected);
+		if(selected) {
+			service.startTimer(CustomUtil.convertInt(p.getProperty("timer")));
+		}else {
+			service.stopTimer();
+		}
 		
 	}
 }

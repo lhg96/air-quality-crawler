@@ -270,3 +270,687 @@
 2020-07-17 15:12:08.828 INFO  15780679 --- [ AWT-EventQueue-0 ] app.service.Service - GetRealTimeData
 2020-07-17 15:55:17.497 INFO  257  --- [ main ] app.AppMain - start app
 2020-07-17 16:15:47.607 INFO  1230367 --- [ AWT-EventQueue-0 ] app.service.SaveDataService - saveAirList:0
+2020-07-19 22:41:41.628 INFO  206  --- [ main ] app.AppMain - start app
+2020-07-19 22:41:48.449 INFO  7027 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-19 22:41:52.543 INFO  11121 --- [ AWT-EventQueue-0 ] app.service.SaveDataService - saveAirList:0
+2020-07-19 23:18:15.568 INFO  206  --- [ main ] app.AppMain - start app
+2020-07-19 23:18:17.864 INFO  2502 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-19 23:18:17.864 INFO  2502 --- [ Thread-2 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-19 23:33:25.402 INFO  910040 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-19 23:33:25.403 INFO  910041 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-19 23:33:25.878 ERROR 910516 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:33:25.884 ERROR 910522 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:33:25.885 ERROR 910523 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:33:25.886 ERROR 910524 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:33:25.888 ERROR 910526 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:33:25.890 ERROR 910528 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:33:25.891 ERROR 910529 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:33:25.892 ERROR 910530 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:33:25.894 ERROR 910532 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:35:18.193 INFO  1022831 --- [ Thread-4 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-19 23:35:18.193 INFO  1022831 --- [ Thread-4 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-19 23:35:18.494 ERROR 1023132 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:35:18.496 ERROR 1023134 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:35:18.497 ERROR 1023135 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:35:18.498 ERROR 1023136 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:35:18.500 ERROR 1023138 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:35:18.502 ERROR 1023140 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:35:18.502 ERROR 1023140 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:35:18.506 ERROR 1023144 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:35:18.509 ERROR 1023147 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:36:47.277 INFO  1111915 --- [ Thread-5 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-19 23:36:47.277 INFO  1111915 --- [ Thread-5 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-19 23:36:47.649 ERROR 1112287 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:36:47.650 ERROR 1112288 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:36:47.651 ERROR 1112289 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:36:47.652 ERROR 1112290 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:36:47.653 ERROR 1112291 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:36:47.655 ERROR 1112293 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:36:47.655 ERROR 1112293 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:36:47.657 ERROR 1112295 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-19 23:36:47.658 ERROR 1112296 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:03:25.170 INFO  200  --- [ main ] app.AppMain - start app
+2020-07-20 00:03:27.766 INFO  2796 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 00:03:27.766 INFO  2796 --- [ Thread-2 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 00:03:28.305 ERROR 3335 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:03:28.310 ERROR 3340 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:03:28.311 ERROR 3341 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:03:28.312 ERROR 3342 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:03:28.315 ERROR 3345 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:03:28.317 ERROR 3347 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:03:28.317 ERROR 3347 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:03:28.320 ERROR 3350 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:03:28.323 ERROR 3353 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:03:30.984 INFO  6014 --- [ AWT-EventQueue-0 ] app.service.SaveDataService - saveAirList:12
+2020-07-20 00:04:57.342 INFO  92372 --- [ AWT-EventQueue-0 ] app.service.SaveDataService - saveAirList:12
+2020-07-20 00:07:40.655 INFO  255685 --- [ AWT-EventQueue-0 ] app.service.SaveDataService - saveAirList:12
+2020-07-20 00:19:18.353 INFO  953383 --- [ AWT-EventQueue-0 ] app.service.SaveDataService - saveAirList:12
+2020-07-20 00:29:02.837 INFO  216  --- [ main ] app.AppMain - start app
+2020-07-20 00:29:05.201 INFO  2580 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:60
+2020-07-20 00:29:09.616 INFO  6995 --- [ AWT-EventQueue-0 ] app.service.Service - Stop Timer
+2020-07-20 00:48:20.880 INFO  199  --- [ main ] app.AppMain - start app
+2020-07-20 00:48:23.159 INFO  2478 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 00:50:19.462 INFO  219  --- [ main ] app.AppMain - start app
+2020-07-20 00:50:22.655 INFO  3412 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 00:50:22.656 INFO  3413 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:50:32.657 INFO  13414 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:50:38.118 INFO  18875 --- [ AWT-EventQueue-0 ] app.service.Service - Stop Timer
+2020-07-20 00:50:55.328 INFO  36085 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 00:51:44.167 INFO  194  --- [ main ] app.AppMain - start app
+2020-07-20 00:51:47.306 INFO  3333 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 00:51:47.307 INFO  3334 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:51:57.307 INFO  13334 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:51:59.843 INFO  15870 --- [ AWT-EventQueue-0 ] app.service.Service - Stop Timer
+2020-07-20 00:52:05.091 INFO  21118 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 00:52:05.092 INFO  21119 --- [ Timer-1 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:52:15.093 INFO  31120 --- [ Timer-1 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:52:17.323 INFO  33350 --- [ AWT-EventQueue-0 ] app.service.Service - Stop Timer
+2020-07-20 00:52:19.363 INFO  35390 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 00:52:19.364 INFO  35391 --- [ Timer-2 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:52:22.485 INFO  38512 --- [ AWT-EventQueue-0 ] app.service.Service - Stop Timer
+2020-07-20 00:52:23.885 INFO  39912 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 00:52:23.887 INFO  39914 --- [ Timer-3 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:52:24.901 INFO  40928 --- [ AWT-EventQueue-0 ] app.service.Service - Stop Timer
+2020-07-20 00:52:25.941 INFO  41968 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 00:52:25.942 INFO  41969 --- [ Timer-4 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:52:26.909 INFO  42936 --- [ AWT-EventQueue-0 ] app.service.Service - Stop Timer
+2020-07-20 00:52:27.629 INFO  43656 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 00:52:27.631 INFO  43658 --- [ Timer-5 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:52:28.606 INFO  44633 --- [ AWT-EventQueue-0 ] app.service.Service - Stop Timer
+2020-07-20 00:52:29.454 INFO  45481 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 00:52:29.455 INFO  45482 --- [ Timer-6 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:52:39.455 INFO  55482 --- [ Timer-6 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:52:49.455 INFO  65482 --- [ Timer-6 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:52:59.456 INFO  75483 --- [ Timer-6 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:53:09.456 INFO  85483 --- [ Timer-6 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:53:19.457 INFO  95484 --- [ Timer-6 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:53:29.457 INFO  105484 --- [ Timer-6 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:53:39.458 INFO  115485 --- [ Timer-6 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:53:49.458 INFO  125485 --- [ Timer-6 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:53:59.459 INFO  135486 --- [ Timer-6 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:54:04.767 INFO  140794 --- [ AWT-EventQueue-0 ] app.service.Service - Stop Timer
+2020-07-20 00:54:07.039 INFO  143066 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 00:54:07.043 INFO  143070 --- [ Timer-7 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:54:17.042 INFO  153069 --- [ Timer-7 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:54:27.043 INFO  163070 --- [ Timer-7 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:54:37.043 INFO  173070 --- [ Timer-7 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:54:47.043 INFO  183070 --- [ Timer-7 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:54:57.043 INFO  193070 --- [ Timer-7 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:55:07.043 INFO  203070 --- [ Timer-7 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:55:17.044 INFO  213071 --- [ Timer-7 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:57:13.886 INFO  205  --- [ main ] app.AppMain - start app
+2020-07-20 00:57:17.414 INFO  3733 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 00:57:17.422 INFO  3741 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:57:17.450 INFO  3769 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 서울 crawling
+2020-07-20 00:57:17.450 INFO  3769 --- [ Thread-3 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-20 00:57:22.747 INFO  9066 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 경기 crawling
+2020-07-20 00:57:22.747 INFO  9066 --- [ Thread-3 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-20 00:57:27.423 INFO  13742 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:57:27.943 INFO  14262 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 인천 crawling
+2020-07-20 00:57:27.943 INFO  14262 --- [ Thread-3 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-20 00:57:33.043 INFO  19362 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 강원 crawling
+2020-07-20 00:57:33.043 INFO  19362 --- [ Thread-3 ] a.s.CrawlingStationInfoService - GetStationInfo
+2020-07-20 00:59:15.605 INFO  205  --- [ main ] app.AppMain - start app
+2020-07-20 00:59:17.984 INFO  2584 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 00:59:17.991 INFO  2591 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:59:17.998 INFO  2598 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 00:59:17.998 INFO  2598 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 00:59:17.998 INFO  2598 --- [ Timer-0 ] app.service.SaveDataService - saveAirList:0
+2020-07-20 00:59:18.461 ERROR 3061 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:18.464 ERROR 3064 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:18.467 ERROR 3067 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:18.468 ERROR 3068 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:18.471 ERROR 3071 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:18.474 ERROR 3074 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:18.475 ERROR 3075 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:18.475 ERROR 3075 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:18.478 ERROR 3078 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:27.991 INFO  12591 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:59:27.991 INFO  12591 --- [ Timer-0 ] app.service.SaveDataService - saveAirList:12
+2020-07-20 00:59:27.992 INFO  12592 --- [ Thread-4 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 00:59:27.992 INFO  12592 --- [ Thread-4 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 00:59:28.318 ERROR 12918 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:28.320 ERROR 12920 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:28.321 ERROR 12921 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:28.324 ERROR 12924 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:28.329 ERROR 12929 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:28.332 ERROR 12932 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:28.332 ERROR 12932 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:28.334 ERROR 12934 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:28.336 ERROR 12936 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:37.991 INFO  22591 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 00:59:37.993 INFO  22593 --- [ Timer-0 ] app.service.SaveDataService - saveAirList:24
+2020-07-20 00:59:37.993 INFO  22593 --- [ Thread-5 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 00:59:37.993 INFO  22593 --- [ Thread-5 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 00:59:38.293 ERROR 22893 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:38.295 ERROR 22895 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:38.296 ERROR 22896 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:38.297 ERROR 22897 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:38.299 ERROR 22899 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:38.301 ERROR 22901 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:38.301 ERROR 22901 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:38.302 ERROR 22902 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:38.305 ERROR 22905 --- [ Thread-5 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 00:59:39.810 INFO  24410 --- [ AWT-EventQueue-0 ] app.service.Service - Stop Timer
+2020-07-20 01:06:18.275 INFO  204  --- [ main ] app.AppMain - start app
+2020-07-20 01:06:20.639 INFO  2568 --- [ Thread-2 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:06:20.640 INFO  2569 --- [ Thread-2 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:06:21.097 ERROR 3026 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:21.102 ERROR 3031 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:21.104 ERROR 3033 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:21.108 ERROR 3037 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:21.108 ERROR 3037 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:21.110 ERROR 3039 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:21.113 ERROR 3042 --- [ Thread-2 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:23.969 INFO  5898 --- [ AWT-EventQueue-0 ] app.service.SaveDataService - saveAirList:12
+2020-07-20 01:06:31.133 INFO  13062 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:06:31.133 INFO  13062 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:06:31.490 ERROR 13419 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:31.492 ERROR 13421 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:31.494 ERROR 13423 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:31.501 ERROR 13430 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:31.501 ERROR 13430 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:31.502 ERROR 13431 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:31.504 ERROR 13433 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:06:33.584 INFO  15513 --- [ AWT-EventQueue-0 ] app.service.SaveDataService - saveAirList:24
+2020-07-20 01:06:37.583 INFO  19512 --- [ AWT-EventQueue-0 ] app.service.SaveDataService - saveAirList:24
+2020-07-20 01:11:14.719 INFO  198  --- [ main ] app.AppMain - start app
+2020-07-20 01:11:18.715 INFO  4194 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 01:11:18.722 INFO  4201 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 01:11:18.729 INFO  4208 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:11:18.730 INFO  4209 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:11:18.730 INFO  4209 --- [ Timer-0 ] app.service.SaveDataService - saveAirList:0
+2020-07-20 01:11:19.205 ERROR 4684 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:19.210 ERROR 4689 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:19.212 ERROR 4691 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:19.216 ERROR 4695 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:19.218 ERROR 4697 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:19.218 ERROR 4697 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:19.219 ERROR 4698 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:19.222 ERROR 4701 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:28.722 INFO  14201 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 01:11:28.725 INFO  14204 --- [ Timer-0 ] app.service.SaveDataService - saveAirList:12
+2020-07-20 01:11:28.725 INFO  14204 --- [ Thread-4 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:11:28.726 INFO  14205 --- [ Thread-4 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:11:29.035 ERROR 14514 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:29.037 ERROR 14516 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:29.043 ERROR 14522 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:29.046 ERROR 14525 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:29.048 ERROR 14527 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:29.049 ERROR 14528 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:29.050 ERROR 14529 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:29.056 ERROR 14535 --- [ Thread-4 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:11:34.188 INFO  19667 --- [ AWT-EventQueue-0 ] app.service.Service - Stop Timer
+2020-07-20 01:12:13.992 INFO  59471 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:10 sec
+2020-07-20 01:12:13.993 INFO  59472 --- [ Timer-1 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 01:12:13.994 INFO  59473 --- [ Timer-1 ] app.service.SaveDataService - saveAirList:12
+2020-07-20 01:12:13.994 INFO  59473 --- [ Thread-6 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:12:13.994 INFO  59473 --- [ Thread-6 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:12:14.283 ERROR 59762 --- [ Thread-6 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:14.285 ERROR 59764 --- [ Thread-6 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:14.286 ERROR 59765 --- [ Thread-6 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:14.288 ERROR 59767 --- [ Thread-6 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:14.290 ERROR 59769 --- [ Thread-6 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:14.290 ERROR 59769 --- [ Thread-6 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:14.291 ERROR 59770 --- [ Thread-6 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:14.294 ERROR 59773 --- [ Thread-6 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:23.994 INFO  69473 --- [ Timer-1 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 01:12:23.995 INFO  69474 --- [ Timer-1 ] app.service.SaveDataService - saveAirList:12
+2020-07-20 01:12:23.995 INFO  69474 --- [ Thread-7 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:12:23.995 INFO  69474 --- [ Thread-7 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:12:24.422 ERROR 69901 --- [ Thread-7 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:24.425 ERROR 69904 --- [ Thread-7 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:24.427 ERROR 69906 --- [ Thread-7 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:24.429 ERROR 69908 --- [ Thread-7 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:24.431 ERROR 69910 --- [ Thread-7 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:24.431 ERROR 69910 --- [ Thread-7 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:24.432 ERROR 69911 --- [ Thread-7 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:24.435 ERROR 69914 --- [ Thread-7 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:33.995 INFO  79474 --- [ Timer-1 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 01:12:33.996 INFO  79475 --- [ Timer-1 ] app.service.SaveDataService - saveAirList:12
+2020-07-20 01:12:33.997 INFO  79476 --- [ Thread-8 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:12:33.998 INFO  79477 --- [ Thread-8 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:12:34.305 ERROR 79784 --- [ Thread-8 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:34.307 ERROR 79786 --- [ Thread-8 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:34.309 ERROR 79788 --- [ Thread-8 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:34.312 ERROR 79791 --- [ Thread-8 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:34.314 ERROR 79793 --- [ Thread-8 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:34.314 ERROR 79793 --- [ Thread-8 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:34.315 ERROR 79794 --- [ Thread-8 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:34.316 ERROR 79795 --- [ Thread-8 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:43.996 INFO  89475 --- [ Timer-1 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 01:12:43.996 INFO  89475 --- [ Timer-1 ] app.service.SaveDataService - saveAirList:12
+2020-07-20 01:12:43.996 INFO  89475 --- [ Thread-9 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:12:43.996 INFO  89475 --- [ Thread-9 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:12:44.321 ERROR 89800 --- [ Thread-9 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:44.323 ERROR 89802 --- [ Thread-9 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:44.325 ERROR 89804 --- [ Thread-9 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:44.327 ERROR 89806 --- [ Thread-9 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:44.330 ERROR 89809 --- [ Thread-9 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:44.330 ERROR 89809 --- [ Thread-9 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:44.331 ERROR 89810 --- [ Thread-9 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:44.332 ERROR 89811 --- [ Thread-9 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:53.997 INFO  99476 --- [ Timer-1 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 01:12:53.999 INFO  99478 --- [ Timer-1 ] app.service.SaveDataService - saveAirList:12
+2020-07-20 01:12:54.000 INFO  99479 --- [ Thread-10 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:12:54.000 INFO  99479 --- [ Thread-10 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:12:54.324 ERROR 99803 --- [ Thread-10 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:54.326 ERROR 99805 --- [ Thread-10 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:54.327 ERROR 99806 --- [ Thread-10 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:54.328 ERROR 99807 --- [ Thread-10 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:54.330 ERROR 99809 --- [ Thread-10 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:54.330 ERROR 99809 --- [ Thread-10 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:54.331 ERROR 99810 --- [ Thread-10 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:12:54.332 ERROR 99811 --- [ Thread-10 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:13:03.997 INFO  109476 --- [ Timer-1 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 01:13:03.997 INFO  109476 --- [ Timer-1 ] app.service.SaveDataService - saveAirList:12
+2020-07-20 01:13:03.998 INFO  109477 --- [ Thread-11 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:13:03.998 INFO  109477 --- [ Thread-11 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:13:04.330 ERROR 109809 --- [ Thread-11 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:13:04.330 ERROR 109809 --- [ Thread-11 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:13:04.331 ERROR 109810 --- [ Thread-11 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:13:04.332 ERROR 109811 --- [ Thread-11 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:13:04.333 ERROR 109812 --- [ Thread-11 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:13:04.333 ERROR 109812 --- [ Thread-11 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:13:04.333 ERROR 109812 --- [ Thread-11 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:13:04.334 ERROR 109813 --- [ Thread-11 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:13:10.398 INFO  115877 --- [ AWT-EventQueue-0 ] app.service.Service - Stop Timer
+2020-07-20 01:14:44.721 INFO  211  --- [ main ] app.AppMain - start app
+2020-07-20 01:14:47.799 INFO  3289 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:360 sec
+2020-07-20 01:14:47.808 INFO  3298 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 01:14:47.814 INFO  3304 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 서울 crawling
+2020-07-20 01:14:47.815 INFO  3305 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:14:47.815 INFO  3305 --- [ Timer-0 ] app.service.SaveDataService - saveAirList:0
+2020-07-20 01:14:49.495 ERROR 4985 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:49.498 ERROR 4988 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:49.498 ERROR 4988 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:54.500 INFO  9990 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 경기 crawling
+2020-07-20 01:14:54.500 INFO  9990 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:14:55.005 ERROR 10495 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.014 ERROR 10504 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.018 ERROR 10508 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.037 ERROR 10527 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.052 ERROR 10542 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.080 ERROR 10570 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.085 ERROR 10575 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.087 ERROR 10577 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.093 ERROR 10583 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.112 ERROR 10602 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.127 ERROR 10617 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.135 ERROR 10625 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.143 ERROR 10633 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.153 ERROR 10643 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.161 ERROR 10651 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:14:55.209 ERROR 10699 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:00.212 INFO  15702 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 인천 crawling
+2020-07-20 01:15:00.212 INFO  15702 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:15:01.995 ERROR 17485 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:01.995 ERROR 17485 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.000 ERROR 17490 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.000 ERROR 17490 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.001 ERROR 17491 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.001 ERROR 17491 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.002 ERROR 17492 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.002 ERROR 17492 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.002 ERROR 17492 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.002 ERROR 17492 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.005 ERROR 17495 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.005 ERROR 17495 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.005 ERROR 17495 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.006 ERROR 17496 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.006 ERROR 17496 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.006 ERROR 17496 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.007 ERROR 17497 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.007 ERROR 17497 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.012 ERROR 17502 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.013 ERROR 17503 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.019 ERROR 17509 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:02.020 ERROR 17510 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:07.025 INFO  22515 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 강원 crawling
+2020-07-20 01:15:07.025 INFO  22515 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:15:07.641 ERROR 23131 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:07.642 ERROR 23132 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:07.643 ERROR 23133 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:07.645 ERROR 23135 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:07.647 ERROR 23137 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:07.657 ERROR 23147 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:07.660 ERROR 23150 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:07.667 ERROR 23157 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:07.670 ERROR 23160 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:07.670 ERROR 23160 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:07.671 ERROR 23161 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:12.676 INFO  28166 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 충남 crawling
+2020-07-20 01:15:12.676 INFO  28166 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:15:12.997 ERROR 28487 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:18.014 INFO  33504 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:15:18.014 INFO  33504 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:15:18.340 ERROR 33830 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:18.341 ERROR 33831 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:18.342 ERROR 33832 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:18.343 ERROR 33833 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:18.348 ERROR 33838 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:18.348 ERROR 33838 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:18.349 ERROR 33839 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:18.353 ERROR 33843 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:23.355 INFO  38845 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 충북 crawling
+2020-07-20 01:15:23.355 INFO  38845 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:15:23.721 ERROR 39211 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:23.722 ERROR 39212 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:23.724 ERROR 39214 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:23.726 ERROR 39216 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:23.726 ERROR 39216 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:23.728 ERROR 39218 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:23.728 ERROR 39218 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:23.734 ERROR 39224 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:23.736 ERROR 39226 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:28.739 INFO  44229 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 세종 crawling
+2020-07-20 01:15:28.739 INFO  44229 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:15:29.020 ERROR 44510 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:29.022 ERROR 44512 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:34.026 INFO  49516 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 부산 crawling
+2020-07-20 01:15:34.026 INFO  49516 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:15:34.421 ERROR 49911 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:34.421 ERROR 49911 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:34.423 ERROR 49913 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:34.423 ERROR 49913 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:34.424 ERROR 49914 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:34.424 ERROR 49914 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:34.432 ERROR 49922 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:34.432 ERROR 49922 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:39.438 INFO  54928 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 울산 crawling
+2020-07-20 01:15:39.438 INFO  54928 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:15:39.829 ERROR 55319 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:39.830 ERROR 55320 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:39.832 ERROR 55322 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:39.835 ERROR 55325 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:39.836 ERROR 55326 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:39.836 ERROR 55326 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:39.836 ERROR 55326 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:44.840 INFO  60330 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 대구 crawling
+2020-07-20 01:15:44.840 INFO  60330 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:15:50.166 INFO  65656 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 경북 crawling
+2020-07-20 01:15:50.166 INFO  65656 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:15:50.543 ERROR 66033 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:50.545 ERROR 66035 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:50.545 ERROR 66035 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:50.552 ERROR 66042 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:50.552 ERROR 66042 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:50.552 ERROR 66042 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:50.552 ERROR 66042 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:50.552 ERROR 66042 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:50.552 ERROR 66042 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:50.555 ERROR 66045 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:50.559 ERROR 66049 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:50.559 ERROR 66049 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:50.561 ERROR 66051 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:55.564 INFO  71054 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 경남 crawling
+2020-07-20 01:15:55.564 INFO  71054 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:15:55.952 ERROR 71442 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:55.956 ERROR 71446 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:55.957 ERROR 71447 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:55.969 ERROR 71459 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:15:55.971 ERROR 71461 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:00.979 INFO  76469 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 전남 crawling
+2020-07-20 01:16:00.979 INFO  76469 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:16:01.342 ERROR 76832 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:01.346 ERROR 76836 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:01.348 ERROR 76838 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:01.349 ERROR 76839 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:06.372 INFO  81862 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 전북 crawling
+2020-07-20 01:16:06.372 INFO  81862 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:16:06.713 ERROR 82203 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:06.714 ERROR 82204 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:06.715 ERROR 82205 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:06.715 ERROR 82205 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:06.717 ERROR 82207 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:06.718 ERROR 82208 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:06.718 ERROR 82208 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:06.727 ERROR 82217 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:06.735 ERROR 82225 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:06.736 ERROR 82226 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:06.738 ERROR 82228 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:11.740 INFO  87230 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 제주 crawling
+2020-07-20 01:16:11.740 INFO  87230 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:16:12.040 ERROR 87530 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:12.041 ERROR 87531 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:12.041 ERROR 87531 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:12.043 ERROR 87533 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:12.043 ERROR 87533 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:12.043 ERROR 87533 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:16:12.044 ERROR 87534 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:17:31.267 INFO  166757 --- [ AWT-EventQueue-0 ] app.service.SaveDataService - saveAirList:496
+2020-07-20 01:24:19.099 INFO  192  --- [ main ] app.AppMain - start app
+2020-07-20 01:24:25.314 INFO  6407 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:360 sec
+2020-07-20 01:24:25.322 INFO  6415 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 01:24:25.330 INFO  6423 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 서울 crawling
+2020-07-20 01:24:25.330 INFO  6423 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:24:25.909 ERROR 7002 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:25.911 ERROR 7004 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:25.912 ERROR 7005 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:30.333 INFO  11426 --- [ Timer-0 ] app.service.SaveDataService - saveAirList:40
+2020-07-20 01:24:30.914 INFO  12007 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 경기 crawling
+2020-07-20 01:24:30.914 INFO  12007 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:24:31.394 ERROR 12487 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.403 ERROR 12496 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.405 ERROR 12498 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.423 ERROR 12516 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.433 ERROR 12526 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.446 ERROR 12539 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.448 ERROR 12541 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.450 ERROR 12543 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.451 ERROR 12544 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.461 ERROR 12554 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.470 ERROR 12563 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.472 ERROR 12565 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.478 ERROR 12571 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.483 ERROR 12576 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:31.504 ERROR 12597 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.512 INFO  17605 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 인천 crawling
+2020-07-20 01:24:36.512 INFO  17605 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:24:36.883 ERROR 17976 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.884 ERROR 17977 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.888 ERROR 17981 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.889 ERROR 17982 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.889 ERROR 17982 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.889 ERROR 17982 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.889 ERROR 17982 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.890 ERROR 17983 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.890 ERROR 17983 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.890 ERROR 17983 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.891 ERROR 17984 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.891 ERROR 17984 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.891 ERROR 17984 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.891 ERROR 17984 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.891 ERROR 17984 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.891 ERROR 17984 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.892 ERROR 17985 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.892 ERROR 17985 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.895 ERROR 17988 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.895 ERROR 17988 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.899 ERROR 17992 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:36.900 ERROR 17993 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:41.904 INFO  22997 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 강원 crawling
+2020-07-20 01:24:41.904 INFO  22997 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:24:42.306 ERROR 23399 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:42.308 ERROR 23401 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:42.308 ERROR 23401 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:42.309 ERROR 23402 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:42.312 ERROR 23405 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:42.318 ERROR 23411 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:42.329 ERROR 23422 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:42.331 ERROR 23424 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:42.336 ERROR 23429 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:42.337 ERROR 23430 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:42.339 ERROR 23432 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:42.340 ERROR 23433 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:47.342 INFO  28435 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 충남 crawling
+2020-07-20 01:24:47.342 INFO  28435 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:24:47.693 ERROR 28786 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:52.708 INFO  33801 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:24:52.708 INFO  33801 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:24:52.987 ERROR 34080 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:52.988 ERROR 34081 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:52.989 ERROR 34082 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:52.990 ERROR 34083 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:52.992 ERROR 34085 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:52.992 ERROR 34085 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:52.992 ERROR 34085 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:52.994 ERROR 34087 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:57.995 INFO  39088 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 충북 crawling
+2020-07-20 01:24:57.995 INFO  39088 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:24:58.338 ERROR 39431 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:58.338 ERROR 39431 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:58.341 ERROR 39434 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:58.346 ERROR 39439 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:58.346 ERROR 39439 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:58.347 ERROR 39440 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:58.348 ERROR 39441 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:58.351 ERROR 39444 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:24:58.353 ERROR 39446 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:03.355 INFO  44448 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 세종 crawling
+2020-07-20 01:25:03.355 INFO  44448 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:25:03.631 ERROR 44724 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:03.633 ERROR 44726 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:08.635 INFO  49728 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 부산 crawling
+2020-07-20 01:25:08.635 INFO  49728 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:25:08.943 ERROR 50036 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:08.943 ERROR 50036 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:08.945 ERROR 50038 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:08.945 ERROR 50038 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:08.949 ERROR 50042 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:08.949 ERROR 50042 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:08.957 ERROR 50050 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:08.957 ERROR 50050 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:13.963 INFO  55056 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 울산 crawling
+2020-07-20 01:25:13.963 INFO  55056 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:25:14.257 ERROR 55350 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:14.258 ERROR 55351 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:14.260 ERROR 55353 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:14.266 ERROR 55359 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:14.268 ERROR 55361 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:14.268 ERROR 55361 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:14.268 ERROR 55361 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:19.271 INFO  60364 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 대구 crawling
+2020-07-20 01:25:19.271 INFO  60364 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:25:20.822 INFO  61915 --- [ AWT-EventQueue-0 ] app.service.Service - Stop Timer
+2020-07-20 01:25:24.591 INFO  65684 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 경북 crawling
+2020-07-20 01:25:24.591 INFO  65684 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:25:24.946 ERROR 66039 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:24.948 ERROR 66041 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:24.948 ERROR 66041 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:24.951 ERROR 66044 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:24.951 ERROR 66044 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:24.951 ERROR 66044 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:24.951 ERROR 66044 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:24.951 ERROR 66044 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:24.951 ERROR 66044 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:24.957 ERROR 66050 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:24.961 ERROR 66054 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:24.961 ERROR 66054 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:24.962 ERROR 66055 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:29.965 INFO  71058 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 경남 crawling
+2020-07-20 01:25:29.965 INFO  71058 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:25:30.323 ERROR 71416 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:30.327 ERROR 71420 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:30.329 ERROR 71422 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:30.340 ERROR 71433 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:30.341 ERROR 71434 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:35.349 INFO  76442 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 전남 crawling
+2020-07-20 01:25:35.349 INFO  76442 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:25:35.781 ERROR 76874 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:35.783 ERROR 76876 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:35.784 ERROR 76877 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:35.784 ERROR 76877 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:40.797 INFO  81890 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 전북 crawling
+2020-07-20 01:25:40.797 INFO  81890 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:25:41.116 ERROR 82209 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:41.117 ERROR 82210 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:41.117 ERROR 82210 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:41.118 ERROR 82211 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:41.119 ERROR 82212 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:41.120 ERROR 82213 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:41.121 ERROR 82214 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:41.121 ERROR 82214 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:41.129 ERROR 82222 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:41.139 ERROR 82232 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:41.140 ERROR 82233 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:46.141 INFO  87234 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 제주 crawling
+2020-07-20 01:25:46.141 INFO  87234 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:25:46.443 ERROR 87536 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:46.444 ERROR 87537 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:46.444 ERROR 87537 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:46.446 ERROR 87539 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:46.446 ERROR 87539 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:46.447 ERROR 87540 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:25:46.447 ERROR 87540 --- [ Thread-3 ] app.util.CustomUtil - java.lang.NumberFormatException: For input string: "-"
+2020-07-20 01:34:43.738 INFO  199  --- [ main ] app.AppMain - start app
+2020-07-20 01:34:48.210 INFO  4671 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:360 sec
+2020-07-20 01:34:48.217 INFO  4678 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 01:34:48.225 INFO  4686 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 서울 crawling
+2020-07-20 01:34:48.225 INFO  4686 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:34:53.805 INFO  10266 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 경기 crawling
+2020-07-20 01:34:53.805 INFO  10266 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:34:59.411 INFO  15872 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 인천 crawling
+2020-07-20 01:34:59.411 INFO  15872 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:35:04.770 INFO  21231 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 강원 crawling
+2020-07-20 01:35:04.770 INFO  21231 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:35:10.088 INFO  26549 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 충남 crawling
+2020-07-20 01:35:10.088 INFO  26549 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:35:15.513 INFO  31974 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:35:15.513 INFO  31974 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:35:21.934 INFO  38395 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 충북 crawling
+2020-07-20 01:35:21.934 INFO  38395 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:35:27.271 INFO  43732 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 세종 crawling
+2020-07-20 01:35:27.271 INFO  43732 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:35:32.543 INFO  49004 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 부산 crawling
+2020-07-20 01:35:32.543 INFO  49004 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:35:38.376 INFO  54837 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 울산 crawling
+2020-07-20 01:35:38.376 INFO  54837 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:35:43.713 INFO  60174 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 대구 crawling
+2020-07-20 01:35:43.713 INFO  60174 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:35:49.076 INFO  65537 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 경북 crawling
+2020-07-20 01:35:49.076 INFO  65537 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:35:54.493 INFO  70954 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 경남 crawling
+2020-07-20 01:35:54.493 INFO  70954 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:35:59.995 INFO  76456 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 전남 crawling
+2020-07-20 01:35:59.995 INFO  76456 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:36:05.370 INFO  81831 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 전북 crawling
+2020-07-20 01:36:05.370 INFO  81831 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:36:10.788 INFO  87249 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 제주 crawling
+2020-07-20 01:36:10.788 INFO  87249 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:43:09.556 INFO  196  --- [ main ] app.AppMain - start app
+2020-07-20 01:43:11.960 INFO  2600 --- [ AWT-EventQueue-0 ] app.service.Service - Start Timer:360 sec
+2020-07-20 01:43:11.967 INFO  2607 --- [ Timer-0 ] app.service.MTimerTask - ------------------timer runnn---------------------------------
+2020-07-20 01:43:11.993 INFO  2633 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 서울 crawling
+2020-07-20 01:43:11.994 INFO  2634 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:43:17.802 INFO  8442 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 경기 crawling
+2020-07-20 01:43:17.802 INFO  8442 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:43:23.420 INFO  14060 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 인천 crawling
+2020-07-20 01:43:23.420 INFO  14060 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:43:28.767 INFO  19407 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 강원 crawling
+2020-07-20 01:43:28.767 INFO  19407 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:43:34.141 INFO  24781 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 충남 crawling
+2020-07-20 01:43:34.141 INFO  24781 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:43:39.637 INFO  30277 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 대전 crawling
+2020-07-20 01:43:39.637 INFO  30277 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:43:44.970 INFO  35610 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 충북 crawling
+2020-07-20 01:43:44.971 INFO  35611 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:43:50.495 INFO  41135 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 세종 crawling
+2020-07-20 01:43:50.495 INFO  41135 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:43:55.824 INFO  46464 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 부산 crawling
+2020-07-20 01:43:55.824 INFO  46464 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:44:01.269 INFO  51909 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 울산 crawling
+2020-07-20 01:44:01.269 INFO  51909 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:44:06.609 INFO  57249 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 대구 crawling
+2020-07-20 01:44:06.610 INFO  57250 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:44:11.943 INFO  62583 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 경북 crawling
+2020-07-20 01:44:11.943 INFO  62583 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:44:17.327 INFO  67967 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 경남 crawling
+2020-07-20 01:44:17.327 INFO  67967 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:44:22.717 INFO  73357 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 전남 crawling
+2020-07-20 01:44:22.717 INFO  73357 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:44:28.077 INFO  78717 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 전북 crawling
+2020-07-20 01:44:28.077 INFO  78717 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:44:33.445 INFO  84085 --- [ Thread-3 ] a.s.CrawlingStationInfoService - 제주 crawling
+2020-07-20 01:44:33.445 INFO  84085 --- [ Thread-3 ] a.s.CrawlingStationInfoService - Get PAir
+2020-07-20 01:44:38.741 INFO  89381 --- [ Thread-3 ] app.service.SaveDataService - saveAirList:496

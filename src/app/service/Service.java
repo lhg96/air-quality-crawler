@@ -3,6 +3,7 @@ package app.service;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,7 +40,7 @@ public class Service {
 	public List<Station> 	stationList = new ArrayList<Station>();
 	public List<PAir>		pairList	= new ArrayList<PAir>();
 
-	
+	public boolean 	autoSave		= false;
 	//-------------------Station Info Service----------------------------------
 	public void loadStations() throws IOException {		
 		if(loadStation==null) loadStation = new LoadStationInfoService();
@@ -106,13 +107,45 @@ public class Service {
 				//경고 popup				
 				MsgBox.info("Crawling Data Running", "Waring");
 			}
-		}
+		}	
 		
+		
+	}
+	public void stopCrawling()   throws IOException{
+		if(crawlingData!=null) {
+			crawlingData.stop();
+		}
 	}
 	
 	
 	//--------------upload---------------------------------------------------
 	public void uploadData() throws IOException{		
+	}
+	
+	MTimerTask mTimer;	
+	public void startTimer(int period) {
+		autoSave =true;
+		logger.info("Start Timer:"+period+" sec");
+		if(mTimer==null) {
+			mTimer = new MTimerTask(this);			
+		}
+		
+		if(!mTimer.isRunning()) {
+			mTimer.start(period);
+		}else {
+			//경고 popup				
+			MsgBox.info("Timer Running", "Waring");
+		}		
+	}
+	
+	public void stopTimer() {
+		autoSave = false;
+		logger.info("Stop Timer");
+		if(mTimer!=null) {
+			mTimer.stop();
+			mTimer = null;
+			System.gc();
+		}
 	}
 }
 
