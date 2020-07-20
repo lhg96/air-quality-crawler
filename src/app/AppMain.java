@@ -4,10 +4,6 @@ import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Toolkit;
 import java.awt.Window;
-import java.io.FileReader;
-import java.io.IOException;
-
-import java.util.Properties;
 
 import javax.swing.JFrame;
 import javax.swing.UIManager;

@@ -72,9 +72,8 @@ public class CrawlingDataService implements Runnable {
 				//지역별 수집				
 				service.pairList.addAll(getPAir(url, locals.get(i)));
 				MainFrame.mainUI.appendMessage(locals.get(i)+" crawling data", 1);
-				Thread.sleep(5000);//동시 호출시 에러발생 자동 커텍트 방지
-				//logger.info("delay 5000");
-			} catch (InterruptedException e) {			
+				Thread.sleep(5000);//동시 호출시 에러발생 자동 커텍트 방지				
+			} catch (Exception e) {			
 				e.printStackTrace();
 			}			
 		}		
@@ -102,16 +101,12 @@ public class CrawlingDataService implements Runnable {
 		//add
 		try {
 			Connection.Response response = Jsoup
-					.connect(url)
-					//.userAgent("Mozilla/5.0")
+					.connect(url)					
 					.userAgent("Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36")
-					.timeout(0).execute();
+					.timeout(5000).execute();
 			int statusCode = response.statusCode();
 			if (statusCode == 200) {
 				Document dok = Jsoup.parse(response.body(), url);
-				//MainFrame.mainUI.appendMessage("Receive", 1);
-				//MainFrame.mainUI.appendMessage(dok.toString(), 1);	
-				
 				Elements stationElements = dok.select("body items item");
 				
 				//item item 이 읽혀지지 않음
@@ -146,6 +141,7 @@ public class CrawlingDataService implements Runnable {
 					}
 				});				
 			}
+		
 		} catch (NullPointerException e) {			
 			e.printStackTrace();
 		} catch (HttpStatusException e) {
