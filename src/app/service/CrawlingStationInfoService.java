@@ -18,6 +18,11 @@ import app.gui.MainFrame;
 import app.util.CustomUtil;
 import arim.vo.Station;
 
+/**
+ * 지역 스테이션 정보 가져오기
+ * @author hyun
+ *
+ */
 public class CrawlingStationInfoService implements Runnable{
 	Logger logger = LoggerFactory.getLogger(CrawlingStationInfoService.class);	
 	private Thread worker;
@@ -26,11 +31,13 @@ public class CrawlingStationInfoService implements Runnable{
 	private String url;
 	
 	// 지역명	
+	
 	String[] localArray = 
 			{ "서울", "경기", "인천", "강원", "충남", "대전", "충북", 
-					"세종", "부산", "울산", "대구", "경북", "경남", "전남", "전북","제주" };
+					"세종", "부산", "울산", "대구", "경북", "경남", "전남", "전북","제주" }; 
+					
 						
-	//String[] localArray = { "서울" };	
+	//String[] localArray = { "대전" };	
 	List<String> 	locals = Arrays.asList(localArray);
 
 	public CrawlingStationInfoService(String url,Service service) {
@@ -86,7 +93,7 @@ public class CrawlingStationInfoService implements Runnable{
 					.connect(url)
 					//.userAgent("Mozilla/5.0")
 					.userAgent("Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36")
-					.timeout(0).execute();
+					.timeout(5000).execute();
 			int statusCode = response.statusCode();
 			if (statusCode == 200) {
 				Document dok = Jsoup.parse(response.body(), url);

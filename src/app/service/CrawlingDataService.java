@@ -35,11 +35,11 @@ public class CrawlingDataService implements Runnable {
 	private String 	url;
 	
 	// 지역명
-	String[] 		localArray = 
+	/*String[] 		localArray = 
 				{ "서울", "경기", "인천", "강원", "충남", "대전", "충북", 
 						"세종", "부산", "울산", "대구", "경북", "경남", "전남", "전북","제주" };
-								
-	//String[] 		localArray = { "대전" };
+	*/							
+	String[] 		localArray = { "대전" };
 	List<String> 	locals = Arrays.asList(localArray);
 	
 	public CrawlingDataService(String url,Service service){	
