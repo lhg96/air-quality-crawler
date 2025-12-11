@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvValidationException;
 
 import app.util.CustomUtil;
 import arim.vo.PAir;
@@ -65,8 +66,11 @@ public class LoadDataService{
 	            	//}
 	            	index++;				
 	            }			
-			}
-		
-		return airList;
+		} catch (CsvValidationException e) {
+			logger.error("CSV validation error: " + e.getMessage(), e);
+			throw new IOException("Failed to validate CSV data", e);
+		}
+	
+	return airList;
 	}
 }

@@ -15,6 +15,7 @@ import javax.ws.rs.core.MediaType;
 import org.glassfish.jersey.client.ClientConfig;
 
 import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvValidationException;
 
 import arim.vo.Place;
 
@@ -57,7 +58,7 @@ public class AirKoreaStationListUploader {
 			while ((line = reader.readNext()) != null) {
 				records.add(Arrays.asList(line));
 			}
-		} catch (IOException e) {
+		} catch (IOException | CsvValidationException e) {
 			e.printStackTrace();
 		}
 		return records;
